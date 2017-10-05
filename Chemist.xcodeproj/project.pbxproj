@@ -20,6 +20,10 @@
 		BA15B0561F8626AF00D7B434 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0551F8626AF00D7B434 /* AppCoordinator.swift */; };
 		BA15B0591F86351400D7B434 /* AppDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0581F86351400D7B434 /* AppDelegateHandler.swift */; };
 		BA15B05B1F86364D00D7B434 /* AppDelegateLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B05A1F86364D00D7B434 /* AppDelegateLaunch.swift */; };
+		BA15B05F1F86570A00D7B434 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B05E1F86570A00D7B434 /* main.swift */; };
+		BA15B0621F86594900D7B434 /* AppDelegateHandleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0611F86594900D7B434 /* AppDelegateHandleTests.swift */; };
+		BA15B0651F86599400D7B434 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0631F86596400D7B434 /* TestAppDelegate.swift */; };
+		BA15B0691F865B6000D7B434 /* AppDelegateItemMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0671F865AEF00D7B434 /* AppDelegateItemMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		BA15B0551F8626AF00D7B434 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		BA15B0581F86351400D7B434 /* AppDelegateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateHandler.swift; sourceTree = "<group>"; };
 		BA15B05A1F86364D00D7B434 /* AppDelegateLaunch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateLaunch.swift; sourceTree = "<group>"; };
+		BA15B05E1F86570A00D7B434 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BA15B0611F86594900D7B434 /* AppDelegateHandleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateHandleTests.swift; sourceTree = "<group>"; };
+		BA15B0631F86596400D7B434 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		BA15B0671F865AEF00D7B434 /* AppDelegateItemMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateItemMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 		16BD482B1F56C91F00836CAB /* ChemistTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA15B0601F86594900D7B434 /* AppDelegateHandleTests */,
 				16BD482C1F56C91F00836CAB /* ChemistTests.swift */,
 				16BD482E1F56C91F00836CAB /* Info.plist */,
 			);
@@ -161,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				16BD48531F56C9D600836CAB /* Info.plist */,
+				BA15B05E1F86570A00D7B434 /* main.swift */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -195,6 +205,16 @@
 				BA15B05A1F86364D00D7B434 /* AppDelegateLaunch.swift */,
 			);
 			path = AppDelegateLaunch;
+			sourceTree = "<group>";
+		};
+		BA15B0601F86594900D7B434 /* AppDelegateHandleTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA15B0611F86594900D7B434 /* AppDelegateHandleTests.swift */,
+				BA15B0631F86596400D7B434 /* TestAppDelegate.swift */,
+				BA15B0671F865AEF00D7B434 /* AppDelegateItemMock.swift */,
+			);
+			path = AppDelegateHandleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +354,10 @@
 			files = (
 				BA15B0541F8620DD00D7B434 /* RootViewCoordinator.swift in Sources */,
 				BA15B0521F861C2D00D7B434 /* Coordinator.swift in Sources */,
+				BA15B0651F86599400D7B434 /* TestAppDelegate.swift in Sources */,
+				BA15B05F1F86570A00D7B434 /* main.swift in Sources */,
 				BA15B0561F8626AF00D7B434 /* AppCoordinator.swift in Sources */,
+				BA15B0691F865B6000D7B434 /* AppDelegateItemMock.swift in Sources */,
 				16BD485D1F56C9D600836CAB /* ViewController.swift in Sources */,
 				BA15B05B1F86364D00D7B434 /* AppDelegateLaunch.swift in Sources */,
 				16BD48591F56C9D600836CAB /* AppDelegate.swift in Sources */,
@@ -346,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA15B0621F86594900D7B434 /* AppDelegateHandleTests.swift in Sources */,
 				16BD482D1F56C91F00836CAB /* ChemistTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

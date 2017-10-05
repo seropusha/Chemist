@@ -10,13 +10,11 @@ import UIKit
 
 struct AppDelegateHandler {
     
-    //App Delegate item properties
-    lazy var launch: AppDelegateLaunch = AppDelegateLaunch()
-    //TODO: Add more Appdelegate items in future
+    let items: [UIApplicationDelegate]
     
-    lazy var items: [UIApplicationDelegate] = [self.launch]
-    
-    init() {}
+    init(items: [UIApplicationDelegate]) {
+        self.items = items
+    }
 }
 
 extension AppDelegateHandler {

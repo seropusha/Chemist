@@ -10,16 +10,20 @@ import UIKit
 
 class AppDelegateLaunch: NSObject, UIApplicationDelegate {
     
-    var applicationWindow: UIWindow!
-    var appCoordinator: AppCoordinator!
+    private(set) var applicationWindow: UIWindow!
+    private(set) var appCoordinator: AppCoordinator!
+    
+    override init() {
+        applicationWindow = UIWindow(frame: UIScreen.main.bounds)
+        appCoordinator = AppCoordinator(window: applicationWindow, services: NSObject())
+        super.init()
+    }
 }
 
 //MARK: - UIApplicationDelegate
 extension AppDelegateLaunch {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        self.applicationWindow = UIWindow(frame: UIScreen.main.bounds)
-        self.appCoordinator = AppCoordinator(window: applicationWindow, services: NSObject())
-        self.appCoordinator.start()
+        appCoordinator.start()
         return true
     }
 }
