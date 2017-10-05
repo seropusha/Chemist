@@ -15,7 +15,7 @@ class AppCoordinator: RootViewCoordinator {
     
     //MARK: - Properties
     let window: UIWindow
-    let services: AnyObject
+    let services: Services
     var childCoordinators: [Coordinator] = []
     
     var rootViewController: UIViewController {
@@ -23,7 +23,7 @@ class AppCoordinator: RootViewCoordinator {
     }
     
     //MARK: - Initialization
-    public init(window: UIWindow, services: AnyObject) {
+    public init(window: UIWindow, services: Services) {
         self.services = services
         self.window = window
         

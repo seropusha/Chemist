@@ -15,7 +15,7 @@ class AppDelegateLaunch: NSObject, UIApplicationDelegate {
     
     override init() {
         applicationWindow = UIWindow(frame: UIScreen.main.bounds)
-        appCoordinator = AppCoordinator(window: applicationWindow, services: NSObject())
+        appCoordinator = AppCoordinator(window: applicationWindow, services: Services())
         super.init()
     }
 }

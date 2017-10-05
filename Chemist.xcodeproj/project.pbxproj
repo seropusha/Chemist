@@ -25,6 +25,7 @@
 		BA15B0691F865B6000D7B434 /* AppDelegateItemMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0671F865AEF00D7B434 /* AppDelegateItemMock.swift */; };
 		BA15B06D1F86614400D7B434 /* AppDelegateLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B06C1F86614400D7B434 /* AppDelegateLaunchTests.swift */; };
 		BA15B0701F86649700D7B434 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B06F1F86649700D7B434 /* AppCoordinatorTests.swift */; };
+		BA15B0721F86735400D7B434 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0711F86735400D7B434 /* Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		BA15B0671F865AEF00D7B434 /* AppDelegateItemMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateItemMock.swift; sourceTree = "<group>"; };
 		BA15B06C1F86614400D7B434 /* AppDelegateLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateLaunchTests.swift; sourceTree = "<group>"; };
 		BA15B06F1F86649700D7B434 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		BA15B0711F86735400D7B434 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		16BD485E1F56CDE200836CAB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BA15B0711F86735400D7B434 /* Services.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				BA15B0541F8620DD00D7B434 /* RootViewCoordinator.swift in Sources */,
 				BA15B0521F861C2D00D7B434 /* Coordinator.swift in Sources */,
 				BA15B0651F86599400D7B434 /* TestAppDelegate.swift in Sources */,
+				BA15B0721F86735400D7B434 /* Services.swift in Sources */,
 				BA15B05F1F86570A00D7B434 /* main.swift in Sources */,
 				BA15B0561F8626AF00D7B434 /* AppCoordinator.swift in Sources */,
 				BA15B0691F865B6000D7B434 /* AppDelegateItemMock.swift in Sources */,

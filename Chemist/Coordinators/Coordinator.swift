@@ -12,7 +12,7 @@ import Foundation
 public protocol Coordinator: class {
     
     /// The services that the coordinator can use
-    var services: AnyObject { get }
+    var services: Services { get }
     
     /// The array containing any child Coordinators
     var childCoordinators: [Coordinator] { get set }
