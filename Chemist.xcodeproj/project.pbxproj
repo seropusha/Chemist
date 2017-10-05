@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		16BD481F1F56C91F00836CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BD481E1F56C91F00836CAB /* Assets.xcassets */; };
-		16BD482D1F56C91F00836CAB /* ChemistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD482C1F56C91F00836CAB /* ChemistTests.swift */; };
 		16BD48381F56C91F00836CAB /* ChemistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD48371F56C91F00836CAB /* ChemistUITests.swift */; };
 		16BD48591F56C9D600836CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD48501F56C9D600836CAB /* AppDelegate.swift */; };
 		16BD485A1F56C9D600836CAB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16BD48531F56C9D600836CAB /* Info.plist */; };
@@ -24,6 +23,8 @@
 		BA15B0621F86594900D7B434 /* AppDelegateHandleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0611F86594900D7B434 /* AppDelegateHandleTests.swift */; };
 		BA15B0651F86599400D7B434 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0631F86596400D7B434 /* TestAppDelegate.swift */; };
 		BA15B0691F865B6000D7B434 /* AppDelegateItemMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0671F865AEF00D7B434 /* AppDelegateItemMock.swift */; };
+		BA15B06D1F86614400D7B434 /* AppDelegateLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B06C1F86614400D7B434 /* AppDelegateLaunchTests.swift */; };
+		BA15B0701F86649700D7B434 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B06F1F86649700D7B434 /* AppCoordinatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,6 @@
 		16BD48141F56C91F00836CAB /* Chemist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chemist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BD481E1F56C91F00836CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16BD48281F56C91F00836CAB /* ChemistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		16BD482C1F56C91F00836CAB /* ChemistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemistTests.swift; sourceTree = "<group>"; };
 		16BD482E1F56C91F00836CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16BD48331F56C91F00836CAB /* ChemistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BD48371F56C91F00836CAB /* ChemistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemistUITests.swift; sourceTree = "<group>"; };
@@ -66,6 +66,8 @@
 		BA15B0611F86594900D7B434 /* AppDelegateHandleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateHandleTests.swift; sourceTree = "<group>"; };
 		BA15B0631F86596400D7B434 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
 		BA15B0671F865AEF00D7B434 /* AppDelegateItemMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateItemMock.swift; sourceTree = "<group>"; };
+		BA15B06C1F86614400D7B434 /* AppDelegateLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateLaunchTests.swift; sourceTree = "<group>"; };
+		BA15B06F1F86649700D7B434 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +132,8 @@
 		16BD482B1F56C91F00836CAB /* ChemistTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA15B06E1F86647300D7B434 /* CoordinatorsTests */,
 				BA15B0601F86594900D7B434 /* AppDelegateHandleTests */,
-				16BD482C1F56C91F00836CAB /* ChemistTests.swift */,
 				16BD482E1F56C91F00836CAB /* Info.plist */,
 			);
 			path = ChemistTests;
@@ -210,11 +212,28 @@
 		BA15B0601F86594900D7B434 /* AppDelegateHandleTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA15B06B1F8660F400D7B434 /* AppDelegateLaunchTests */,
 				BA15B0611F86594900D7B434 /* AppDelegateHandleTests.swift */,
 				BA15B0631F86596400D7B434 /* TestAppDelegate.swift */,
 				BA15B0671F865AEF00D7B434 /* AppDelegateItemMock.swift */,
 			);
 			path = AppDelegateHandleTests;
+			sourceTree = "<group>";
+		};
+		BA15B06B1F8660F400D7B434 /* AppDelegateLaunchTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA15B06C1F86614400D7B434 /* AppDelegateLaunchTests.swift */,
+			);
+			path = AppDelegateLaunchTests;
+			sourceTree = "<group>";
+		};
+		BA15B06E1F86647300D7B434 /* CoordinatorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA15B06F1F86649700D7B434 /* AppCoordinatorTests.swift */,
+			);
+			path = CoordinatorsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,8 +388,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA15B0701F86649700D7B434 /* AppCoordinatorTests.swift in Sources */,
 				BA15B0621F86594900D7B434 /* AppDelegateHandleTests.swift in Sources */,
-				16BD482D1F56C91F00836CAB /* ChemistTests.swift in Sources */,
+				BA15B06D1F86614400D7B434 /* AppDelegateLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

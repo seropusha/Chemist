@@ -11,9 +11,19 @@ import XCTest
 
 class AppDelegateHandleTests: XCTestCase {
 
+    var testAppDelegate: TestAppDelegate!
+    
+    override func setUp() {
+        super.setUp()
+        testAppDelegate =  UIApplication.shared.delegate as! TestAppDelegate
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+    }
+    
     func test_appdelegate_handle_items() {
-        let appDelegate = UIApplication.shared.delegate as! TestAppDelegate
-        let isAllItemsLaunched = appDelegate.items.filter{ !$0.isLaunched }.isEmpty
+        let isAllItemsLaunched = testAppDelegate.items.filter{ !$0.isLaunched }.isEmpty
         XCTAssertTrue(isAllItemsLaunched, "All app delegate items must call didFinishLaunchWithOptions method")
     }
 
