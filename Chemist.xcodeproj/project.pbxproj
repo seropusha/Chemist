@@ -18,6 +18,8 @@
 		BA15B0521F861C2D00D7B434 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0511F861C2D00D7B434 /* Coordinator.swift */; };
 		BA15B0541F8620DD00D7B434 /* RootViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0531F8620DD00D7B434 /* RootViewCoordinator.swift */; };
 		BA15B0561F8626AF00D7B434 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0551F8626AF00D7B434 /* AppCoordinator.swift */; };
+		BA15B0591F86351400D7B434 /* AppDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0581F86351400D7B434 /* AppDelegateHandler.swift */; };
+		BA15B05B1F86364D00D7B434 /* AppDelegateLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B05A1F86364D00D7B434 /* AppDelegateLaunch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		BA15B0511F861C2D00D7B434 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BA15B0531F8620DD00D7B434 /* RootViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewCoordinator.swift; sourceTree = "<group>"; };
 		BA15B0551F8626AF00D7B434 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		BA15B0581F86351400D7B434 /* AppDelegateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateHandler.swift; sourceTree = "<group>"; };
+		BA15B05A1F86364D00D7B434 /* AppDelegateLaunch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateLaunch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +140,9 @@
 		16BD484F1F56C9D600836CAB /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				BA15B0571F8634AE00D7B434 /* AppDelegateLaunch */,
 				16BD48501F56C9D600836CAB /* AppDelegate.swift */,
+				BA15B0581F86351400D7B434 /* AppDelegateHandler.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -181,6 +187,14 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BA15B0571F8634AE00D7B434 /* AppDelegateLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				BA15B05A1F86364D00D7B434 /* AppDelegateLaunch.swift */,
+			);
+			path = AppDelegateLaunch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,7 +336,9 @@
 				BA15B0521F861C2D00D7B434 /* Coordinator.swift in Sources */,
 				BA15B0561F8626AF00D7B434 /* AppCoordinator.swift in Sources */,
 				16BD485D1F56C9D600836CAB /* ViewController.swift in Sources */,
+				BA15B05B1F86364D00D7B434 /* AppDelegateLaunch.swift in Sources */,
 				16BD48591F56C9D600836CAB /* AppDelegate.swift in Sources */,
+				BA15B0591F86351400D7B434 /* AppDelegateHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
