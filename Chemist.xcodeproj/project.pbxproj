@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16182B9B1F976A5000A2CCDC /* AppDelegateItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16182B9A1F976A5000A2CCDC /* AppDelegateItems.swift */; };
+		16182B9B1F976A5000A2CCDC /* AppDelegateContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16182B9A1F976A5000A2CCDC /* AppDelegateContainer.swift */; };
 		16BD481F1F56C91F00836CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BD481E1F56C91F00836CAB /* Assets.xcassets */; };
 		16BD48381F56C91F00836CAB /* ChemistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD48371F56C91F00836CAB /* ChemistUITests.swift */; };
 		16BD48591F56C9D600836CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD48501F56C9D600836CAB /* AppDelegate.swift */; };
@@ -46,7 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16182B9A1F976A5000A2CCDC /* AppDelegateItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateItems.swift; sourceTree = "<group>"; };
+		16182B9A1F976A5000A2CCDC /* AppDelegateContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateContainer.swift; sourceTree = "<group>"; };
 		16BD48141F56C91F00836CAB /* Chemist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chemist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BD481E1F56C91F00836CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16BD48281F56C91F00836CAB /* ChemistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,7 +157,7 @@
 				BA15B0571F8634AE00D7B434 /* AppDelegateLaunch */,
 				16BD48501F56C9D600836CAB /* AppDelegate.swift */,
 				BA15B0581F86351400D7B434 /* AppDelegateHandler.swift */,
-				16182B9A1F976A5000A2CCDC /* AppDelegateItems.swift */,
+				16182B9A1F976A5000A2CCDC /* AppDelegateContainer.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -378,7 +378,7 @@
 				BA15B0541F8620DD00D7B434 /* RootViewCoordinator.swift in Sources */,
 				BA15B0521F861C2D00D7B434 /* Coordinator.swift in Sources */,
 				BA15B0651F86599400D7B434 /* TestAppDelegate.swift in Sources */,
-				16182B9B1F976A5000A2CCDC /* AppDelegateItems.swift in Sources */,
+				16182B9B1F976A5000A2CCDC /* AppDelegateContainer.swift in Sources */,
 				BA15B0721F86735400D7B434 /* Services.swift in Sources */,
 				BA15B05F1F86570A00D7B434 /* main.swift in Sources */,
 				BA15B0561F8626AF00D7B434 /* AppCoordinator.swift in Sources */,
