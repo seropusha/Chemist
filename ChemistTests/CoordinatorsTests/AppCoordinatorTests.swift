@@ -17,7 +17,7 @@ class AppCoordinatorTests: XCTestCase {
     override func setUp() {
         super.setUp()
         mockWindow = UIWindow(frame: UIScreen.main.bounds)
-        coordinator = AppCoordinator(window: mockWindow, services: NSObject())
+        coordinator = AppCoordinator(window: mockWindow, services: Services())
     }
     
     override func tearDown() {
