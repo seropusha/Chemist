@@ -12,12 +12,12 @@ import XCTest
 class AppCoordinatorTests: XCTestCase {
     
     var coordinator: AppCoordinator!
-    var mockWindow: UIWindow!
+    var window: UIWindow!
     
     override func setUp() {
         super.setUp()
-        mockWindow = UIWindow(frame: UIScreen.main.bounds)
-        coordinator = AppCoordinator(window: mockWindow, services: Services())
+        window = UIApplication.shared.delegate!.window!!
+        coordinator = AppCoordinator(window: window, services: Services())
     }
     
     override func tearDown() {
@@ -25,6 +25,6 @@ class AppCoordinatorTests: XCTestCase {
     }
     
     func test_make_key_window() {
-        XCTAssertEqual(mockWindow, UIApplication.shared.keyWindow, "mockWindow must be keyWindow")
+        XCTAssertEqual(window, UIApplication.shared.keyWindow, "mockWindow must be keyWindow")
     }
 }

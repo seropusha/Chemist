@@ -11,11 +11,13 @@ import XCTest
 
 class AppDelegateLaunchTests: XCTest {
     
+    var window: UIWindow!
     var launchItem: AppDelegateLaunch!
     
     override func setUp() {
         super.setUp()
-        launchItem = AppDelegateLaunch()
+        window = UIApplication.shared.delegate!.window!!
+        launchItem = AppDelegateLaunch(window: window)
     }
     
     override func tearDown() {
@@ -23,7 +25,7 @@ class AppDelegateLaunchTests: XCTest {
     }
     
     func test_create_window_and_appCoordinator() {
-        XCTAssertNotNil(launchItem.applicationWindow, "window must be created")
+        XCTAssertNotNil(launchItem.startWindow, "window must be created")
         XCTAssertNotNil(launchItem.appCoordinator, "app coordinator must be created")
     }
     

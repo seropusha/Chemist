@@ -8,20 +8,13 @@
 
 import UIKit
 
-//@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    let items: [UIApplicationDelegate]
-    private(set) var handler: AppDelegateHandler
+    private lazy var delegates: AppDelegateContainer = AppDelegateContainer(window: self.window!)
+    private lazy var handler: AppDelegateHandler = AppDelegateHandler(items:self.delegates.items)
     
-    override init() {
-        items = [AppDelegateLaunch()]
-        handler = AppDelegateHandler(items: items)
-        super.init()
-    }
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         return handler.application(application, didFinishLaunchingWithOptions: launchOptions)
     }

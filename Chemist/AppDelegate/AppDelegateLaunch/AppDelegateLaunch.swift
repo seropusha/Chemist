@@ -8,14 +8,16 @@
 
 import UIKit
 
+/// First delegate item,
+/// which setup start coordinator, window make key and wisible with start controller and make services injection 
 class AppDelegateLaunch: NSObject, UIApplicationDelegate {
     
-    private(set) var applicationWindow: UIWindow!
-    private(set) var appCoordinator: AppCoordinator!
+    let startWindow: UIWindow
+    let appCoordinator: AppCoordinator
     
-    override init() {
-        applicationWindow = UIWindow(frame: UIScreen.main.bounds)
-        appCoordinator = AppCoordinator(window: applicationWindow, services: Services())
+    init(window: UIWindow) {
+        startWindow = window
+        appCoordinator = AppCoordinator(window: window, services: Services())
         super.init()
     }
 }
@@ -24,6 +26,7 @@ class AppDelegateLaunch: NSObject, UIApplicationDelegate {
 extension AppDelegateLaunch {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         appCoordinator.start()
+        startWindow.makeKeyAndVisible()
         return true
     }
 }

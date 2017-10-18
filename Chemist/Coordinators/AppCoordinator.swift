@@ -26,9 +26,7 @@ class AppCoordinator: RootViewCoordinator {
     public init(window: UIWindow, services: Services) {
         self.services = services
         self.window = window
-        
         self.window.rootViewController = self.rootViewController
-        self.window.makeKeyAndVisible()
     }
     
     //MARK: - Methods

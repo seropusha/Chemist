@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Work with objects which supports UIApplicationDelegate protocol and call UIApplicationDelegate methods
 struct AppDelegateHandler {
     
     let items: [UIApplicationDelegate]
