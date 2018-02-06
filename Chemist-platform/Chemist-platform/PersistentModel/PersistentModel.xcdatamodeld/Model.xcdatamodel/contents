@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13533" systemVersion="17C205" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RemedyDescriptionEntity" representedClassName="RemedyDescriptionEntity" syncable="YES">
+        <attribute name="bbd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cautions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contraindications" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dosing" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="drugInteractions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="drugOverdose" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="indications" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pharmacodynamics" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pharmacokinetics" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pharmacologyActionDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precautions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releaseForm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sideEffects" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="specialCases" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storageConditions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="useDuringPregnancy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="useInImpairedRenalFunction" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RemedyEntity" inverseName="info" inverseEntity="RemedyEntity" syncable="YES"/>
+    </entity>
+    <entity name="RemedyEntity" representedClassName="RemedyEntity" syncable="YES">
+        <attribute name="farmGroup" attributeType="String" syncable="YES"/>
+        <attribute name="farmType" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="jenericIDs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="manufactured" attributeType="String" syncable="YES"/>
+        <attribute name="substance" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="titleFull" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="String" syncable="YES"/>
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RemedyDescriptionEntity" inverseName="parent" inverseEntity="RemedyDescriptionEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RemedyEntity" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="RemedyDescriptionEntity" positionX="261" positionY="-18" width="128" height="315"/>
+    </elements>
+</model>
