@@ -27,6 +27,7 @@
 		BA15B06D1F86614400D7B434 /* AppDelegateLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B06C1F86614400D7B434 /* AppDelegateLaunchTests.swift */; };
 		BA15B0701F86649700D7B434 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B06F1F86649700D7B434 /* AppCoordinatorTests.swift */; };
 		BA15B0721F86735400D7B434 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15B0711F86735400D7B434 /* Services.swift */; };
+		C71F2E37971C50D5A1C3539C /* Pods_Chemist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198F07C06852A5A23C55FADB /* Pods_Chemist.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		16BD48551F56C9D600836CAB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16BD48561F56C9D600836CAB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		16BD48581F56C9D600836CAB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		198F07C06852A5A23C55FADB /* Pods_Chemist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chemist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2C8FBA609E85B1DD8A3148 /* Pods-Chemist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist/Pods-Chemist.debug.xcconfig"; sourceTree = "<group>"; };
 		BA15B0511F861C2D00D7B434 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BA15B0531F8620DD00D7B434 /* RootViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewCoordinator.swift; sourceTree = "<group>"; };
 		BA15B0551F8626AF00D7B434 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		BA15B06C1F86614400D7B434 /* AppDelegateLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateLaunchTests.swift; sourceTree = "<group>"; };
 		BA15B06F1F86649700D7B434 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 		BA15B0711F86735400D7B434 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		E4D604038BCA5D39DF151694 /* Pods-Chemist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist/Pods-Chemist.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C71F2E37971C50D5A1C3539C /* Pods_Chemist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +121,8 @@
 				16BD482B1F56C91F00836CAB /* ChemistTests */,
 				16BD48361F56C91F00836CAB /* ChemistUITests */,
 				16BD48151F56C91F00836CAB /* Products */,
+				35BE3C9E3A0AD892F863E72D /* Pods */,
+				76825EDBDFF71C30D675CAA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +226,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		35BE3C9E3A0AD892F863E72D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A2C8FBA609E85B1DD8A3148 /* Pods-Chemist.debug.xcconfig */,
+				E4D604038BCA5D39DF151694 /* Pods-Chemist.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76825EDBDFF71C30D675CAA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				198F07C06852A5A23C55FADB /* Pods_Chemist.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA15B0571F8634AE00D7B434 /* AppDelegateLaunch */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,9 +285,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16BD483C1F56C91F00836CAB /* Build configuration list for PBXNativeTarget "Chemist" */;
 			buildPhases = (
+				DD344B2062DB7875324DC8E1 /* [CP] Check Pods Manifest.lock */,
 				16BD48101F56C91F00836CAB /* Sources */,
 				16BD48111F56C91F00836CAB /* Frameworks */,
 				16BD48121F56C91F00836CAB /* Resources */,
+				81BC554F6777944D98E38DFC /* [CP] Embed Pods Frameworks */,
+				54E053FD46268BBED233B060 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -382,6 +409,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54E053FD46268BBED233B060 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Chemist/Pods-Chemist-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81BC554F6777944D98E38DFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Chemist/Pods-Chemist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD344B2062DB7875324DC8E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chemist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16BD48101F56C91F00836CAB /* Sources */ = {
@@ -547,6 +625,7 @@
 		};
 		16BD483D1F56C91F00836CAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A2C8FBA609E85B1DD8A3148 /* Pods-Chemist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -562,6 +641,7 @@
 		};
 		16BD483E1F56C91F00836CAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4D604038BCA5D39DF151694 /* Pods-Chemist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

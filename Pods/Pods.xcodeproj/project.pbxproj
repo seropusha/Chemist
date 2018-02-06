@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CA7B97990A1C866B89A285B56CA3802 /* Pods-Chemist-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C11C6F14B1BDDAE8C632EB63CDEC2852 /* Pods-Chemist-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38F2F6DCB667A87A003B7DCACA4AFAB6 /* Pods-Chemist-platform-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A06911989045D08C6A36BAE4BDD9F93 /* Pods-Chemist-platform-dummy.m */; };
+		4C5A9EED3218A645845A6F5FAE11003A /* Pods-Chemist-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2CAD868F5351F57FDCE6DAB7C3897D /* Pods-Chemist-dummy.m */; };
+		67BE1A3CACAA93287261B05C657531AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6D971C7DDF75987149B6450284E250FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7EBE01D14B16DFA1089CDA8D24A3496F /* Pods-Chemist-domain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D979FF20B4562B998BB2C97C104607 /* Pods-Chemist-domain-dummy.m */; };
+		911571E76D5EF0CF7242FDAA8A13FA3D /* Pods-Chemist-domain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D031B44BC9DA5DCC792F56110129B6 /* Pods-Chemist-domain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF22A5E01B24BD31BDB2745D4E8660BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F5181DC0C38DD0B8797D4DCDD777D5BB /* Pods-Chemist-platform-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3656AFC911FAE470ED0B55EA8FBA45 /* Pods-Chemist-platform-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A06911989045D08C6A36BAE4BDD9F93 /* Pods-Chemist-platform-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chemist-platform-dummy.m"; sourceTree = "<group>"; };
+		112415B1874849FEDDC0A76A2A2F2E00 /* Pods-Chemist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chemist.debug.xcconfig"; sourceTree = "<group>"; };
+		1DBE247AD2CF5E7730FB641ADCA474F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		293FEE80A68937D40BC6D0919772D995 /* Pods-Chemist-platform-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chemist-platform-acknowledgements.plist"; sourceTree = "<group>"; };
+		2B6C2C02EC82A3CD504C6436C2DE499D /* Pods_Chemist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Chemist.framework; path = "Pods-Chemist.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD1E217E33175532E1F89109D6F4CC7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0058789AA932AA0B08005129601C77 /* Pods-Chemist-domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chemist-domain.release.xcconfig"; sourceTree = "<group>"; };
+		33C2E3FC0292E4BDB9D312AF05693A33 /* Pods-Chemist-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chemist-resources.sh"; sourceTree = "<group>"; };
+		357CBA5BC6A92E6D06C5E46DB74A06C7 /* Pods-Chemist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chemist.release.xcconfig"; sourceTree = "<group>"; };
+		44C0C13B84DD6F5ACB7AE5A9E8D9DE11 /* Pods-Chemist-platform-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chemist-platform-frameworks.sh"; sourceTree = "<group>"; };
+		5BB975FA192D8943EDFEAD1C03987827 /* Pods-Chemist-platform.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Chemist-platform.modulemap"; sourceTree = "<group>"; };
+		635DFA6E249DD30737412523025A7233 /* Pods-Chemist-platform-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chemist-platform-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68999055934EA961C3F5F5944E27F25B /* Pods-Chemist-domain-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chemist-domain-acknowledgements.plist"; sourceTree = "<group>"; };
+		6DEE809E24A1D13AE25B77C2292548BF /* Pods-Chemist-domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chemist-domain.debug.xcconfig"; sourceTree = "<group>"; };
+		6E3656AFC911FAE470ED0B55EA8FBA45 /* Pods-Chemist-platform-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chemist-platform-umbrella.h"; sourceTree = "<group>"; };
+		76A9B58BF1A900640604D63434214ED1 /* Pods-Chemist-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chemist-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8234B198232185787CADB9A81A10913E /* Pods-Chemist.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Chemist.modulemap"; sourceTree = "<group>"; };
+		89F46F6D6996833F7D922BBFA7BCB045 /* Pods-Chemist-platform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chemist-platform.debug.xcconfig"; sourceTree = "<group>"; };
+		8E0C48501D5B8A1CDDC27EFC8C49F83C /* Pods-Chemist-domain-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chemist-domain-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94C3E001D3ED851E2E1450DC3A7F7387 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BAEE47A515768557583E9C4EA94255E /* Pods-Chemist-platform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chemist-platform.release.xcconfig"; sourceTree = "<group>"; };
+		9BEAB1CFACC620B34397AE5E3C03B7DB /* Pods-Chemist-platform-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chemist-platform-resources.sh"; sourceTree = "<group>"; };
+		A4EBCFCC9994D8B8E22DEB277D1130D3 /* Pods-Chemist-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chemist-acknowledgements.plist"; sourceTree = "<group>"; };
+		A74184A5D3BBFCA6BDCB6E007344FA4F /* Pods-Chemist-domain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Chemist-domain.modulemap"; sourceTree = "<group>"; };
+		B7BD9A81FDC1AD0811BC07E40C1DA09E /* Pods_Chemist_platform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Chemist_platform.framework; path = "Pods-Chemist-platform.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11C6F14B1BDDAE8C632EB63CDEC2852 /* Pods-Chemist-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chemist-umbrella.h"; sourceTree = "<group>"; };
+		D5D031B44BC9DA5DCC792F56110129B6 /* Pods-Chemist-domain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chemist-domain-umbrella.h"; sourceTree = "<group>"; };
+		DE2CAD868F5351F57FDCE6DAB7C3897D /* Pods-Chemist-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chemist-dummy.m"; sourceTree = "<group>"; };
+		EC1D010553F556C14849AA2B9D90B504 /* Pods-Chemist-domain-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chemist-domain-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F1D979FF20B4562B998BB2C97C104607 /* Pods-Chemist-domain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chemist-domain-dummy.m"; sourceTree = "<group>"; };
+		FCAFB0F50467DF74E21C9582B552BE20 /* Pods_Chemist_domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Chemist_domain.framework; path = "Pods-Chemist-domain.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5735A491BC546F622BECBCD165D8C9 /* Pods-Chemist-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chemist-frameworks.sh"; sourceTree = "<group>"; };
+		FDB9398DF0F0CBC2AD30E533C17DF250 /* Pods-Chemist-domain-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chemist-domain-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01BF280A5C557A39D3C2A56EC8689F3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D971C7DDF75987149B6450284E250FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07CA9DD7208895975113BCB6002ADA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BE1A3CACAA93287261B05C657531AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA31431F0C0293595A9CFA8621F5B201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF22A5E01B24BD31BDB2745D4E8660BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DC757D957EB8A29972AE5552542EB46 /* Pods-Chemist-domain */ = {
+			isa = PBXGroup;
+			children = (
+				1DBE247AD2CF5E7730FB641ADCA474F2 /* Info.plist */,
+				A74184A5D3BBFCA6BDCB6E007344FA4F /* Pods-Chemist-domain.modulemap */,
+				EC1D010553F556C14849AA2B9D90B504 /* Pods-Chemist-domain-acknowledgements.markdown */,
+				68999055934EA961C3F5F5944E27F25B /* Pods-Chemist-domain-acknowledgements.plist */,
+				F1D979FF20B4562B998BB2C97C104607 /* Pods-Chemist-domain-dummy.m */,
+				8E0C48501D5B8A1CDDC27EFC8C49F83C /* Pods-Chemist-domain-frameworks.sh */,
+				FDB9398DF0F0CBC2AD30E533C17DF250 /* Pods-Chemist-domain-resources.sh */,
+				D5D031B44BC9DA5DCC792F56110129B6 /* Pods-Chemist-domain-umbrella.h */,
+				6DEE809E24A1D13AE25B77C2292548BF /* Pods-Chemist-domain.debug.xcconfig */,
+				2C0058789AA932AA0B08005129601C77 /* Pods-Chemist-domain.release.xcconfig */,
+			);
+			name = "Pods-Chemist-domain";
+			path = "Target Support Files/Pods-Chemist-domain";
+			sourceTree = "<group>";
+		};
+		361F442EAA99961CB877D573399E92D0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B1B0D2805C34054094352AD8D9F604F /* Pods-Chemist */,
+				2DC757D957EB8A29972AE5552542EB46 /* Pods-Chemist-domain */,
+				D05198ED664A4656E39A16478F7AAEBA /* Pods-Chemist-platform */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		53695EF71A6A461B840255F4AE6FA688 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B6C2C02EC82A3CD504C6436C2DE499D /* Pods_Chemist.framework */,
+				FCAFB0F50467DF74E21C9582B552BE20 /* Pods_Chemist_domain.framework */,
+				B7BD9A81FDC1AD0811BC07E40C1DA09E /* Pods_Chemist_platform.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B1B0D2805C34054094352AD8D9F604F /* Pods-Chemist */ = {
+			isa = PBXGroup;
+			children = (
+				94C3E001D3ED851E2E1450DC3A7F7387 /* Info.plist */,
+				8234B198232185787CADB9A81A10913E /* Pods-Chemist.modulemap */,
+				76A9B58BF1A900640604D63434214ED1 /* Pods-Chemist-acknowledgements.markdown */,
+				A4EBCFCC9994D8B8E22DEB277D1130D3 /* Pods-Chemist-acknowledgements.plist */,
+				DE2CAD868F5351F57FDCE6DAB7C3897D /* Pods-Chemist-dummy.m */,
+				FD5735A491BC546F622BECBCD165D8C9 /* Pods-Chemist-frameworks.sh */,
+				33C2E3FC0292E4BDB9D312AF05693A33 /* Pods-Chemist-resources.sh */,
+				C11C6F14B1BDDAE8C632EB63CDEC2852 /* Pods-Chemist-umbrella.h */,
+				112415B1874849FEDDC0A76A2A2F2E00 /* Pods-Chemist.debug.xcconfig */,
+				357CBA5BC6A92E6D06C5E46DB74A06C7 /* Pods-Chemist.release.xcconfig */,
+			);
+			name = "Pods-Chemist";
+			path = "Target Support Files/Pods-Chemist";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				53695EF71A6A461B840255F4AE6FA688 /* Products */,
+				361F442EAA99961CB877D573399E92D0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D05198ED664A4656E39A16478F7AAEBA /* Pods-Chemist-platform */ = {
+			isa = PBXGroup;
+			children = (
+				2BD1E217E33175532E1F89109D6F4CC7 /* Info.plist */,
+				5BB975FA192D8943EDFEAD1C03987827 /* Pods-Chemist-platform.modulemap */,
+				635DFA6E249DD30737412523025A7233 /* Pods-Chemist-platform-acknowledgements.markdown */,
+				293FEE80A68937D40BC6D0919772D995 /* Pods-Chemist-platform-acknowledgements.plist */,
+				0A06911989045D08C6A36BAE4BDD9F93 /* Pods-Chemist-platform-dummy.m */,
+				44C0C13B84DD6F5ACB7AE5A9E8D9DE11 /* Pods-Chemist-platform-frameworks.sh */,
+				9BEAB1CFACC620B34397AE5E3C03B7DB /* Pods-Chemist-platform-resources.sh */,
+				6E3656AFC911FAE470ED0B55EA8FBA45 /* Pods-Chemist-platform-umbrella.h */,
+				89F46F6D6996833F7D922BBFA7BCB045 /* Pods-Chemist-platform.debug.xcconfig */,
+				9BAEE47A515768557583E9C4EA94255E /* Pods-Chemist-platform.release.xcconfig */,
+			);
+			name = "Pods-Chemist-platform";
+			path = "Target Support Files/Pods-Chemist-platform";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2965961952F9FD3CC6A5030738462019 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911571E76D5EF0CF7242FDAA8A13FA3D /* Pods-Chemist-domain-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655E5C8DEDF793D037F38115FD03C32D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA7B97990A1C866B89A285B56CA3802 /* Pods-Chemist-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907A811E8FEFEF8EFD81CA21175E8EBD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5181DC0C38DD0B8797D4DCDD777D5BB /* Pods-Chemist-platform-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03A2F261C3939E3EFA2E701B8EE5A78D /* Pods-Chemist-domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4A39EB51FC32A73D8EDAEE1DEE00AC /* Build configuration list for PBXNativeTarget "Pods-Chemist-domain" */;
+			buildPhases = (
+				D8B32DBE99354AE4191436E1A4D85540 /* Sources */,
+				07CA9DD7208895975113BCB6002ADA08 /* Frameworks */,
+				2965961952F9FD3CC6A5030738462019 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Chemist-domain";
+			productName = "Pods-Chemist-domain";
+			productReference = FCAFB0F50467DF74E21C9582B552BE20 /* Pods_Chemist_domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		31445FBC410A6997F2002C24358C9672 /* Pods-Chemist-platform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A748FA45D5566669E266553C256A8AA6 /* Build configuration list for PBXNativeTarget "Pods-Chemist-platform" */;
+			buildPhases = (
+				2ABE972A52DE80AE4779D3EDF7CAD158 /* Sources */,
+				01BF280A5C557A39D3C2A56EC8689F3F /* Frameworks */,
+				907A811E8FEFEF8EFD81CA21175E8EBD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Chemist-platform";
+			productName = "Pods-Chemist-platform";
+			productReference = B7BD9A81FDC1AD0811BC07E40C1DA09E /* Pods_Chemist_platform.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4B0C0FD3055458520A4384239A03914 /* Pods-Chemist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC3F3D18DD2653148A6D30B6FE4E4C3 /* Build configuration list for PBXNativeTarget "Pods-Chemist" */;
+			buildPhases = (
+				350FFCB77F5A55E21EEA7B47D46281E9 /* Sources */,
+				CA31431F0C0293595A9CFA8621F5B201 /* Frameworks */,
+				655E5C8DEDF793D037F38115FD03C32D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Chemist";
+			productName = "Pods-Chemist";
+			productReference = 2B6C2C02EC82A3CD504C6436C2DE499D /* Pods_Chemist.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 53695EF71A6A461B840255F4AE6FA688 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4B0C0FD3055458520A4384239A03914 /* Pods-Chemist */,
+				03A2F261C3939E3EFA2E701B8EE5A78D /* Pods-Chemist-domain */,
+				31445FBC410A6997F2002C24358C9672 /* Pods-Chemist-platform */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ABE972A52DE80AE4779D3EDF7CAD158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F2F6DCB667A87A003B7DCACA4AFAB6 /* Pods-Chemist-platform-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350FFCB77F5A55E21EEA7B47D46281E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5A9EED3218A645845A6F5FAE11003A /* Pods-Chemist-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B32DBE99354AE4191436E1A4D85540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EBE01D14B16DFA1089CDA8D24A3496F /* Pods-Chemist-domain-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		23743682498FE951127C423305EECC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 112415B1874849FEDDC0A76A2A2F2E00 /* Pods-Chemist.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Chemist/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Chemist/Pods-Chemist.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Chemist;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3421E62E7621434B6CA3BB2F46E30652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F46F6D6996833F7D922BBFA7BCB045 /* Pods-Chemist-platform.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Chemist-platform/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Chemist-platform/Pods-Chemist-platform.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Chemist_platform;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		540BC662A3BF5071E31BD1BB4B6F71B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEE809E24A1D13AE25B77C2292548BF /* Pods-Chemist-domain.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Chemist-domain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Chemist-domain/Pods-Chemist-domain.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Chemist_domain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60FD1C67C6C17630E15159F5552AF4CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0058789AA932AA0B08005129601C77 /* Pods-Chemist-domain.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Chemist-domain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Chemist-domain/Pods-Chemist-domain.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Chemist_domain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		74F73B873C19EB26F13AC7A4567C4CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 357CBA5BC6A92E6D06C5E46DB74A06C7 /* Pods-Chemist.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Chemist/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Chemist/Pods-Chemist.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Chemist;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C07ED8089F70A31B83996A8910D7F18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		98F29E7567052F62660DDD7069ADF73C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BAE6FC876491EC5A64852A6541078FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BAEE47A515768557583E9C4EA94255E /* Pods-Chemist-platform.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Chemist-platform/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Chemist-platform/Pods-Chemist-platform.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Chemist_platform;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C07ED8089F70A31B83996A8910D7F18 /* Debug */,
+				98F29E7567052F62660DDD7069ADF73C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC3F3D18DD2653148A6D30B6FE4E4C3 /* Build configuration list for PBXNativeTarget "Pods-Chemist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23743682498FE951127C423305EECC34 /* Debug */,
+				74F73B873C19EB26F13AC7A4567C4CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A748FA45D5566669E266553C256A8AA6 /* Build configuration list for PBXNativeTarget "Pods-Chemist-platform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3421E62E7621434B6CA3BB2F46E30652 /* Debug */,
+				BAE6FC876491EC5A64852A6541078FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4A39EB51FC32A73D8EDAEE1DEE00AC /* Build configuration list for PBXNativeTarget "Pods-Chemist-domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540BC662A3BF5071E31BD1BB4B6F71B4 /* Debug */,
+				60FD1C67C6C17630E15159F5552AF4CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -10,6 +10,7 @@
 		166911782027BD3D00412886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 166911772027BD3D00412886 /* Assets.xcassets */; };
 		1669117B2027BD3D00412886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166911792027BD3D00412886 /* LaunchScreen.storyboard */; };
 		16691321202A4C7E00412886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16691320202A4C7E00412886 /* AppDelegate.swift */; };
+		9A350B68A5138DD311068712 /* Pods_Chemist_domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72089EA35DC1C3527C633B91 /* Pods_Chemist_domain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,9 @@
 		1669117A2027BD3D00412886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1669117C2027BD3D00412886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16691320202A4C7E00412886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34568E68957D1D33CAC7ADB9 /* Pods-Chemist-domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-domain.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-domain/Pods-Chemist-domain.debug.xcconfig"; sourceTree = "<group>"; };
+		72089EA35DC1C3527C633B91 /* Pods_Chemist_domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chemist_domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		886DAF0E13998579C5E3C16A /* Pods-Chemist-domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-domain.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-domain/Pods-Chemist-domain.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A350B68A5138DD311068712 /* Pods_Chemist_domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +41,8 @@
 			children = (
 				1669116F2027BD3D00412886 /* Chemist-domain */,
 				1669116E2027BD3D00412886 /* Products */,
+				703DABB2A8978A88F8A8D48E /* Pods */,
+				F5E43F0E337205B29DCF91FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +65,23 @@
 			path = "Chemist-domain";
 			sourceTree = "<group>";
 		};
+		703DABB2A8978A88F8A8D48E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34568E68957D1D33CAC7ADB9 /* Pods-Chemist-domain.debug.xcconfig */,
+				886DAF0E13998579C5E3C16A /* Pods-Chemist-domain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5E43F0E337205B29DCF91FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72089EA35DC1C3527C633B91 /* Pods_Chemist_domain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,9 +89,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1669117F2027BD3D00412886 /* Build configuration list for PBXNativeTarget "Chemist-domain" */;
 			buildPhases = (
+				F9C7130BFF66BEE61B74D905 /* [CP] Check Pods Manifest.lock */,
 				166911692027BD3D00412886 /* Sources */,
 				1669116A2027BD3D00412886 /* Frameworks */,
 				1669116B2027BD3D00412886 /* Resources */,
+				668DF714BC3D17CF2AEE360E /* [CP] Embed Pods Frameworks */,
+				6C1C71BE43EFD2B052D44CC9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +151,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		668DF714BC3D17CF2AEE360E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Chemist-domain/Pods-Chemist-domain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C1C71BE43EFD2B052D44CC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Chemist-domain/Pods-Chemist-domain-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9C7130BFF66BEE61B74D905 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chemist-domain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		166911692027BD3D00412886 /* Sources */ = {
@@ -257,6 +335,7 @@
 		};
 		166911802027BD3D00412886 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34568E68957D1D33CAC7ADB9 /* Pods-Chemist-domain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -275,6 +354,7 @@
 		};
 		166911812027BD3D00412886 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 886DAF0E13998579C5E3C16A /* Pods-Chemist-domain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
