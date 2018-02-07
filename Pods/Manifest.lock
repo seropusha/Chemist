@@ -1,4 +1,9 @@
 PODS:
+  - Alamofire (4.6.0)
+  - AlamofireNetworkActivityIndicator (2.2.0):
+    - Alamofire (~> 4.5)
+  - AlamofireNetworkActivityLogger (2.2.0):
+    - Alamofire (~> 4.0)
   - ReactiveCocoa (7.1.0):
     - ReactiveSwift (~> 3.1)
   - ReactiveSwift (3.1.0):
@@ -6,14 +11,29 @@ PODS:
   - Result (3.2.4)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.6.0)
+  - AlamofireNetworkActivityIndicator (~> 2.2.0)
+  - AlamofireNetworkActivityLogger (from `https://github.com/konkab/AlamofireNetworkActivityLogger`)
   - ReactiveCocoa (~> 7.0)
   - ReactiveSwift (~> 3.0)
 
+EXTERNAL SOURCES:
+  AlamofireNetworkActivityLogger:
+    :git: https://github.com/konkab/AlamofireNetworkActivityLogger
+
+CHECKOUT OPTIONS:
+  AlamofireNetworkActivityLogger:
+    :commit: cc5e15da717d1b38774f99c309a40e8cc56146b4
+    :git: https://github.com/konkab/AlamofireNetworkActivityLogger
+
 SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireNetworkActivityIndicator: 81e1630e7cfed22a4e4e82a174c59e651dc4f8ca
+  AlamofireNetworkActivityLogger: 8419256d94c585fe8cf23a6227cecbcd134b53ea
   ReactiveCocoa: 105ad96f6b8711f1ee7d165fc96587479298053b
   ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
-PODFILE CHECKSUM: e8fe28d6b655a8c8463de39c1c80081d702f82f3
+PODFILE CHECKSUM: dd13f24dd59f781dfd659b7cd1a31b1fec45886d
 
 COCOAPODS: 1.4.0

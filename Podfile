@@ -19,6 +19,9 @@ end
 
 target 'Chemist-platform' do
     for_all
+      pod 'Alamofire', '~> 4.6.0'
+      pod 'AlamofireNetworkActivityIndicator', '~> 2.2.0'
+      pod 'AlamofireNetworkActivityLogger', :git => 'https://github.com/konkab/AlamofireNetworkActivityLogger'
     project 'Chemist-platform/Chemist-platform.xcodeproj'
 end
 
@@ -26,5 +29,3 @@ target 'Chemist-domain' do
     for_all
     project 'Chemist-domain/Chemist-domain.xcodeproj'
 end
-
-
