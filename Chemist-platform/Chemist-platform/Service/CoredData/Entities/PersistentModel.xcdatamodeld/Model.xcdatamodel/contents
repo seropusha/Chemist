@@ -33,7 +33,7 @@
         <relationship name="info" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RemedyDescriptionEntity" inverseName="parent" inverseEntity="RemedyDescriptionEntity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="RemedyEntity" positionX="-63" positionY="-18" width="128" height="195"/>
         <element name="RemedyDescriptionEntity" positionX="261" positionY="-18" width="128" height="315"/>
+        <element name="RemedyEntity" positionX="-63" positionY="-18" width="128" height="195"/>
     </elements>
 </model>
