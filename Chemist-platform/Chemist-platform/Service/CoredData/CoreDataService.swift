@@ -10,16 +10,16 @@ import Foundation
 import CoreData
 
 protocol CoreData {
-    var mainMOC: NSManagedObjectContext { get }
-    var privateMOC: NSManagedObjectContext { get }
+    var viewManagedObjectContext: NSManagedObjectContext { get }
+    var privateManagedObjectContext: NSManagedObjectContext { get }
     var persistentStoreCoordinator: NSPersistentStoreCoordinator { get }
     
-    func saveMainContext()
+    func saveViewContext()
 }
 
 class CoreDataService: CoreData {
-    var mainMOC: NSManagedObjectContext
-    var privateMOC: NSManagedObjectContext
+    var viewManagedObjectContext: NSManagedObjectContext
+    var privateManagedObjectContext: NSManagedObjectContext
     var persistentStoreCoordinator: NSPersistentStoreCoordinator
     
     init() {
@@ -32,8 +32,8 @@ class CoreDataService: CoreData {
         }
         
         persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: mom)
-        mainMOC = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
-        mainMOC.persistentStoreCoordinator = persistentStoreCoordinator
+        viewManagedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+        viewManagedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator
         
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let docURL = urls[urls.endIndex-1]
@@ -45,14 +45,14 @@ class CoreDataService: CoreData {
             fatalError("Error migrating store: \(error)")
         }
         
-        privateMOC = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
-        privateMOC.parent = mainMOC
+        privateManagedObjectContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+        privateManagedObjectContext.parent = viewManagedObjectContext
     }
     
-    func saveMainContext() {
-        if mainMOC.hasChanges {
+    func saveViewContext() {
+        if viewManagedObjectContext.hasChanges {
             do {
-                try mainMOC.save()
+                try viewManagedObjectContext.save()
             } catch {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
