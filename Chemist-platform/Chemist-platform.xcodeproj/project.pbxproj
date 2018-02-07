@@ -15,7 +15,12 @@
 		16A43A6E202B20FF00D4A84A /* RemedyDescriptionEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A64202B20FF00D4A84A /* RemedyDescriptionEntity+CoreDataClass.swift */; };
 		16A43A6F202B20FF00D4A84A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A65202B20FF00D4A84A /* CoreDataService.swift */; };
 		16A43A70202B20FF00D4A84A /* NSManagedObjectContextFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A66202B20FF00D4A84A /* NSManagedObjectContextFetch.swift */; };
-		16A43A71202B20FF00D4A84A /* PersistentRemedyGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A68202B20FF00D4A84A /* PersistentRemedyGateway.swift */; };
+		16A43A71202B20FF00D4A84A /* PersistentRemedyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A68202B20FF00D4A84A /* PersistentRemedyRepository.swift */; };
+		16A43A89202B3E7F00D4A84A /* RemedyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A88202B3E7F00D4A84A /* RemedyItem.swift */; };
+		16A43A8B202B3E8A00D4A84A /* RemedyDescriptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A8A202B3E8A00D4A84A /* RemedyDescriptionItem.swift */; };
+		16A43A8D202B3EE200D4A84A /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A8C202B3EE200D4A84A /* APISession.swift */; };
+		16A43A8F202B429700D4A84A /* JSONable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A8E202B429700D4A84A /* JSONable.swift */; };
+		16A43C01202B448800D4A84A /* Dictionary+DeserializationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43C00202B448800D4A84A /* Dictionary+DeserializationResponse.swift */; };
 		8CFD3B60435286F092EF2C89 /* Pods_Chemist_platform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A947A3A7C4942ECC8286C1 /* Pods_Chemist_platform.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +35,12 @@
 		16A43A64202B20FF00D4A84A /* RemedyDescriptionEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemedyDescriptionEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		16A43A65202B20FF00D4A84A /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		16A43A66202B20FF00D4A84A /* NSManagedObjectContextFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContextFetch.swift; sourceTree = "<group>"; };
-		16A43A68202B20FF00D4A84A /* PersistentRemedyGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentRemedyGateway.swift; sourceTree = "<group>"; };
+		16A43A68202B20FF00D4A84A /* PersistentRemedyRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentRemedyRepository.swift; sourceTree = "<group>"; };
+		16A43A88202B3E7F00D4A84A /* RemedyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemedyItem.swift; sourceTree = "<group>"; };
+		16A43A8A202B3E8A00D4A84A /* RemedyDescriptionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemedyDescriptionItem.swift; sourceTree = "<group>"; };
+		16A43A8C202B3EE200D4A84A /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
+		16A43A8E202B429700D4A84A /* JSONable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONable.swift; sourceTree = "<group>"; };
+		16A43C00202B448800D4A84A /* Dictionary+DeserializationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+DeserializationResponse.swift"; sourceTree = "<group>"; };
 		53DCA844ED393F0698AE3BF7 /* Pods-Chemist-platform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-platform.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-platform/Pods-Chemist-platform.debug.xcconfig"; sourceTree = "<group>"; };
 		5C41C64453EDA418AC671794 /* Pods-Chemist-platform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-platform.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-platform/Pods-Chemist-platform.release.xcconfig"; sourceTree = "<group>"; };
 		B0A947A3A7C4942ECC8286C1 /* Pods_Chemist_platform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chemist_platform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +101,7 @@
 				16A43A5E202B20FF00D4A84A /* Entities */,
 				16A43A65202B20FF00D4A84A /* CoreDataService.swift */,
 				16A43A66202B20FF00D4A84A /* NSManagedObjectContextFetch.swift */,
-				16A43A67202B20FF00D4A84A /* Gateways */,
+				16A43A67202B20FF00D4A84A /* Repositories */,
 			);
 			path = CoredData;
 			sourceTree = "<group>";
@@ -108,18 +118,19 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		16A43A67202B20FF00D4A84A /* Gateways */ = {
+		16A43A67202B20FF00D4A84A /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				16A43A68202B20FF00D4A84A /* PersistentRemedyGateway.swift */,
+				16A43A68202B20FF00D4A84A /* PersistentRemedyRepository.swift */,
 			);
-			path = Gateways;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		16A43A69202B20FF00D4A84A /* API */ = {
 			isa = PBXGroup;
 			children = (
 				16A43A87202B237C00D4A84A /* Entities */,
+				16A43A8C202B3EE200D4A84A /* APISession.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -127,6 +138,10 @@
 		16A43A87202B237C00D4A84A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				16A43C00202B448800D4A84A /* Dictionary+DeserializationResponse.swift */,
+				16A43A8E202B429700D4A84A /* JSONable.swift */,
+				16A43A88202B3E7F00D4A84A /* RemedyItem.swift */,
+				16A43A8A202B3E8A00D4A84A /* RemedyDescriptionItem.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -265,12 +280,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A43C01202B448800D4A84A /* Dictionary+DeserializationResponse.swift in Sources */,
 				16A43A6D202B20FF00D4A84A /* RemedyEntity+CoreDataClass.swift in Sources */,
-				16A43A71202B20FF00D4A84A /* PersistentRemedyGateway.swift in Sources */,
+				16A43A89202B3E7F00D4A84A /* RemedyItem.swift in Sources */,
+				16A43A8B202B3E8A00D4A84A /* RemedyDescriptionItem.swift in Sources */,
+				16A43A71202B20FF00D4A84A /* PersistentRemedyRepository.swift in Sources */,
+				16A43A8F202B429700D4A84A /* JSONable.swift in Sources */,
 				16A43A6E202B20FF00D4A84A /* RemedyDescriptionEntity+CoreDataClass.swift in Sources */,
 				16A43A6A202B20FF00D4A84A /* RemedyEntity+CoreDataProperties.swift in Sources */,
 				16A43A6C202B20FF00D4A84A /* PersistentModel.xcdatamodeld in Sources */,
 				16A43A70202B20FF00D4A84A /* NSManagedObjectContextFetch.swift in Sources */,
+				16A43A8D202B3EE200D4A84A /* APISession.swift in Sources */,
 				16A43A6F202B20FF00D4A84A /* CoreDataService.swift in Sources */,
 				16A43A6B202B20FF00D4A84A /* RemedyDescriptionEntity+CoreDataProperties.swift in Sources */,
 			);

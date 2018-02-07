@@ -9,14 +9,14 @@
 import Foundation
 import CoreData
 
-protocol PersistentRemedyGateway {
+protocol PersistentRemedyRepository {
     var context: NSManagedObjectContextFetch { get }
     init(_ context: NSManagedObjectContextFetch)
     
     //TODO: get, create, get with pagination
 }
 
-class CoreDataRemedyGateway: PersistentRemedyGateway {
+class CoreDataRemedyRepository: PersistentRemedyRepository {
     
     let context: NSManagedObjectContextFetch
     
