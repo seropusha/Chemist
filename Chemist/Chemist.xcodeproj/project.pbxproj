@@ -50,7 +50,6 @@
 /* Begin PBXFileReference section */
 		16182B9A1F976A5000A2CCDC /* AppDelegateContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateContainer.swift; sourceTree = "<group>"; };
 		16182BBE1F979A0B00A2CCDC /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
-		16182BC01F979E7C00A2CCDC /* jeneric2-3.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jeneric2-3.db"; sourceTree = "<group>"; };
 		16BD48141F56C91F00836CAB /* Chemist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chemist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BD481E1F56C91F00836CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16BD48281F56C91F00836CAB /* ChemistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +192,6 @@
 		16BD48521F56C9D600836CAB /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
-				16182BC01F979E7C00A2CCDC /* jeneric2-3.db */,
 				16BD48531F56C9D600836CAB /* Info.plist */,
 				BA15B05E1F86570A00D7B434 /* main.swift */,
 			);

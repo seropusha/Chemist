@@ -16,6 +16,7 @@
 		16A43A6F202B20FF00D4A84A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A65202B20FF00D4A84A /* CoreDataService.swift */; };
 		16A43A70202B20FF00D4A84A /* NSManagedObjectContextFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A66202B20FF00D4A84A /* NSManagedObjectContextFetch.swift */; };
 		16A43A71202B20FF00D4A84A /* PersistentRemedyGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A68202B20FF00D4A84A /* PersistentRemedyGateway.swift */; };
+		8CFD3B60435286F092EF2C89 /* Pods_Chemist_platform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A947A3A7C4942ECC8286C1 /* Pods_Chemist_platform.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		16A43A65202B20FF00D4A84A /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		16A43A66202B20FF00D4A84A /* NSManagedObjectContextFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContextFetch.swift; sourceTree = "<group>"; };
 		16A43A68202B20FF00D4A84A /* PersistentRemedyGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentRemedyGateway.swift; sourceTree = "<group>"; };
+		53DCA844ED393F0698AE3BF7 /* Pods-Chemist-platform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-platform.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-platform/Pods-Chemist-platform.debug.xcconfig"; sourceTree = "<group>"; };
+		5C41C64453EDA418AC671794 /* Pods-Chemist-platform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-platform.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-platform/Pods-Chemist-platform.release.xcconfig"; sourceTree = "<group>"; };
+		B0A947A3A7C4942ECC8286C1 /* Pods_Chemist_platform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chemist_platform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CFD3B60435286F092EF2C89 /* Pods_Chemist_platform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				16A43A53202B209700D4A84A /* Chemist-platform */,
 				16A43A52202B209700D4A84A /* Products */,
+				36919479038C3643634A2753 /* Pods */,
+				E0A1A65EB0F49F977EF1C7D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,7 +88,7 @@
 		16A43A5D202B20FF00D4A84A /* CoredData */ = {
 			isa = PBXGroup;
 			children = (
-				16A43A5E202B20FF00D4A84A /* PersistentModel */,
+				16A43A5E202B20FF00D4A84A /* Entities */,
 				16A43A65202B20FF00D4A84A /* CoreDataService.swift */,
 				16A43A66202B20FF00D4A84A /* NSManagedObjectContextFetch.swift */,
 				16A43A67202B20FF00D4A84A /* Gateways */,
@@ -89,7 +96,7 @@
 			path = CoredData;
 			sourceTree = "<group>";
 		};
-		16A43A5E202B20FF00D4A84A /* PersistentModel */ = {
+		16A43A5E202B20FF00D4A84A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				16A43A5F202B20FF00D4A84A /* RemedyEntity+CoreDataProperties.swift */,
@@ -98,7 +105,7 @@
 				16A43A63202B20FF00D4A84A /* RemedyEntity+CoreDataClass.swift */,
 				16A43A64202B20FF00D4A84A /* RemedyDescriptionEntity+CoreDataClass.swift */,
 			);
-			path = PersistentModel;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		16A43A67202B20FF00D4A84A /* Gateways */ = {
@@ -112,8 +119,33 @@
 		16A43A69202B20FF00D4A84A /* API */ = {
 			isa = PBXGroup;
 			children = (
+				16A43A87202B237C00D4A84A /* Entities */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		16A43A87202B237C00D4A84A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		36919479038C3643634A2753 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53DCA844ED393F0698AE3BF7 /* Pods-Chemist-platform.debug.xcconfig */,
+				5C41C64453EDA418AC671794 /* Pods-Chemist-platform.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0A1A65EB0F49F977EF1C7D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0A947A3A7C4942ECC8286C1 /* Pods_Chemist_platform.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,10 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16A43A59202B209700D4A84A /* Build configuration list for PBXNativeTarget "Chemist-platform" */;
 			buildPhases = (
+				AD8999C03E72BF8C0D6B74A4 /* [CP] Check Pods Manifest.lock */,
 				16A43A4C202B209700D4A84A /* Sources */,
 				16A43A4D202B209700D4A84A /* Frameworks */,
 				16A43A4E202B209700D4A84A /* Headers */,
 				16A43A4F202B209700D4A84A /* Resources */,
+				F1C064B7C6641D554D390F61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,6 +223,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD8999C03E72BF8C0D6B74A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chemist-platform-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1C064B7C6641D554D390F61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Chemist-platform/Pods-Chemist-platform-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16A43A4C202B209700D4A84A /* Sources */ = {
@@ -324,6 +394,7 @@
 		};
 		16A43A5A202B209700D4A84A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53DCA844ED393F0698AE3BF7 /* Pods-Chemist-platform.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +415,7 @@
 		};
 		16A43A5B202B209700D4A84A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C41C64453EDA418AC671794 /* Pods-Chemist-platform.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

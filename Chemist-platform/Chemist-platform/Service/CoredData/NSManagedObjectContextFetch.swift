@@ -8,32 +8,44 @@
 
 import Foundation
 import CoreData
+import ReactiveSwift
+import Result
 
 protocol NSManagedObjectContextFetch {
-    func allEntities<T: NSManagedObject>(withType type: T.Type) throws -> [T]
-    func allEntities<T: NSManagedObject>(withType type: T.Type, predicate: NSPredicate?) throws -> [T]
-    func addEntity<T: NSManagedObject>(withType type : T.Type) -> T?
+    func allEntities<T: NSManagedObject>(withType type: T.Type) -> SignalProducer<[T],AnyError>
+    func allEntities<T: NSManagedObject>(withType type: T.Type, predicate: NSPredicate?) ->  SignalProducer<[T],AnyError>
+    func addEntity<T: NSManagedObject>(withType type : T.Type) ->  SignalProducer<T?,AnyError>
 }
 
 extension NSManagedObjectContext: NSManagedObjectContextFetch {
-    func allEntities<T: NSManagedObject>(withType type: T.Type) throws -> [T] {
-        return try allEntities(withType: type, predicate: nil)
+    func allEntities<T: NSManagedObject>(withType type: T.Type) -> SignalProducer<[T],AnyError> {
+        return allEntities(withType: type, predicate: nil)
     }
     
-    func allEntities<T : NSManagedObject>(withType type: T.Type, predicate: NSPredicate?) throws -> [T] {
-        let request = NSFetchRequest<T>(entityName: T.description())
-        request.predicate = predicate
-        let results = try self.fetch(request)
-        
-        return results
-    }
-    
-    func addEntity<T : NSManagedObject>(withType type: T.Type) -> T? {
-        guard let entity = NSEntityDescription.entity(forEntityName: T.description(), in: self) else {
-            return nil
+    func allEntities<T: NSManagedObject>(withType type: T.Type, predicate: NSPredicate?) -> SignalProducer<[T],AnyError> {
+        return SignalProducer<[T], AnyError> { [unowned self] observer, lifetime in
+            let request = NSFetchRequest<T>(entityName: T.description())
+            request.predicate = predicate
+            do {
+                let results = try self.fetch(request)
+                observer.send(value: results)
+                observer.sendCompleted()
+            } catch let error {
+                observer.send(error: .init(error))
+            }
         }
-        let record = T(entity: entity, insertInto: self)
-        
-        return record
+    }
+    
+    func addEntity<T : NSManagedObject>(withType type: T.Type) -> SignalProducer<T?,AnyError> {
+        return SignalProducer<T?, AnyError> { observer, lifetime in
+            guard let entity = NSEntityDescription.entity(forEntityName: T.description(), in: self) else {
+                observer.send(value: nil)
+                observer.sendCompleted()
+                return
+            }
+            let record = T(entity: entity, insertInto: self)
+            observer.send(value: record)
+            observer.sendCompleted()
+        }
     }
 }
