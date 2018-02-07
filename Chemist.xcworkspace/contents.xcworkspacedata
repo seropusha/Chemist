@@ -11,9 +11,6 @@
       location = "container:Chemist/Chemist.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Chemist/Chemist.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

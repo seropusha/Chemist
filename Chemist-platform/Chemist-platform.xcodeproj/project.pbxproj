@@ -14,6 +14,7 @@
 		1669131C202A4ABA00412886 /* RemedyDescriptionEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1669131A202A4ABA00412886 /* RemedyDescriptionEntity+CoreDataClass.swift */; };
 		1669131D202A4ABA00412886 /* RemedyDescriptionEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1669131B202A4ABA00412886 /* RemedyDescriptionEntity+CoreDataProperties.swift */; };
 		1669131F202A4C1C00412886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1669131E202A4C1C00412886 /* AppDelegate.swift */; };
+		16A43A01202AFD5400D4A84A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A00202AFD5400D4A84A /* CoreDataStack.swift */; };
 		E6452D0C2AD5D882A5788B65 /* Pods_Chemist_platform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC665CC608E55D58173573F /* Pods_Chemist_platform.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		1669131A202A4ABA00412886 /* RemedyDescriptionEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemedyDescriptionEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1669131B202A4ABA00412886 /* RemedyDescriptionEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemedyDescriptionEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1669131E202A4C1C00412886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16A43A00202AFD5400D4A84A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		CBC665CC608E55D58173573F /* Pods_Chemist_platform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chemist_platform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BAE7F486EB2BC9FEA1FD62 /* Pods-Chemist-platform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-platform.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-platform/Pods-Chemist-platform.release.xcconfig"; sourceTree = "<group>"; };
 		EB885AF49B02A51A32F86699 /* Pods-Chemist-platform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-platform.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-platform/Pods-Chemist-platform.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		166911512027BD0100412886 /* Chemist-platform */ = {
 			isa = PBXGroup;
 			children = (
+				16A439FD202AFD1F00D4A84A /* Service */,
 				1669131E202A4C1C00412886 /* AppDelegate.swift */,
 				16691311202A49CA00412886 /* PersistentModel */,
 				166911592027BD0100412886 /* Assets.xcassets */,
@@ -85,6 +88,30 @@
 				16691310202A49CA00412886 /* PersistentModel.xcdatamodeld */,
 			);
 			path = PersistentModel;
+			sourceTree = "<group>";
+		};
+		16A439FD202AFD1F00D4A84A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				16A439FF202AFD4600D4A84A /* API */,
+				16A439FE202AFD3100D4A84A /* CoredDataStack */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		16A439FE202AFD3100D4A84A /* CoredDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				16A43A00202AFD5400D4A84A /* CoreDataStack.swift */,
+			);
+			path = CoredDataStack;
+			sourceTree = "<group>";
+		};
+		16A439FF202AFD4600D4A84A /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		E9D313A23E4D3AA5D1A2018A /* Pods */ = {
@@ -240,6 +267,7 @@
 				16691319202A4A6300412886 /* RemedyEntity+CoreDataClass.swift in Sources */,
 				1669131D202A4ABA00412886 /* RemedyDescriptionEntity+CoreDataProperties.swift in Sources */,
 				1669131C202A4ABA00412886 /* RemedyDescriptionEntity+CoreDataClass.swift in Sources */,
+				16A43A01202AFD5400D4A84A /* CoreDataStack.swift in Sources */,
 				1669131F202A4C1C00412886 /* AppDelegate.swift in Sources */,
 				16691318202A4A6300412886 /* RemedyEntity+CoreDataProperties.swift in Sources */,
 			);
