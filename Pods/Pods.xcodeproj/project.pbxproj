@@ -7,103 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015DE5AF2A4A89B9BF5B8C4AE4BCFCF6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC679A31F1949616678348FD925D2E /* Result.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		04BEBCE8571BB07B73C5C47971F8C7CB /* Pods-Chemist-platform-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A06911989045D08C6A36BAE4BDD9F93 /* Pods-Chemist-platform-dummy.m */; };
-		05DEB807E6620E7B270D64C9B28AD872 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88413D3423B7D98A262B64705C973C2 /* UILabel.swift */; };
-		0D5824C2593620AA98857970A5CCCD3F /* ValidatingProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48BD126A5FC7C613EF721C46E74934 /* ValidatingProperty.swift */; };
-		0DA8FF6159F6E42EF826CE2FA52CAA08 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ADA879CC43A1270B497148E5E2B329 /* UITextView.swift */; };
-		1261002EEEE638E82ECED8744CCC22C3 /* Flatten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCE4068BBA8B75727B643FCE364415 /* Flatten.swift */; };
-		1298C04E064CEB4C15248AAA12933F92 /* EventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F653A6A7DDF9738EAE2BEA38896FFCD /* EventLogger.swift */; };
-		16F04BC1578E1422DF16104BB9A103B9 /* ReactiveCocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEED08B7966E7C977CF3433D93BBD18 /* ReactiveCocoa-dummy.m */; };
-		17ACF2AF3183DE1E18F95183076050A5 /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04CF06B5B8F19A7347588DE11C3B4B /* UIControl.swift */; };
-		2033A44C7860EF6A432C11000A9E8F88 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716EDDED2BF4A681615B1C98AB76FAF9 /* UITextField.swift */; };
-		219B14F98A756152F699B30FE2133D92 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827AB3E16C95EBDB51098F6B9E171098 /* Bag.swift */; };
+		066E15DC702CEE15A974A41E57CE6C80 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED8A52ADEC6BB56BD16080B6DA32956 /* Observer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0B1A392D521680B15DD39246B0C9F59B /* NSObject+ObjCRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E3BDBA468293B48CC227586D8F9420 /* NSObject+ObjCRuntime.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0DA78669C514A123F3E740EC7B834769 /* UIBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952CFCACB094D2BC3373C239F6BDA07 /* UIBarItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		12D087104D0E4AEAEBD54613CF2EB93A /* UIFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD884E762A8E546060B7CBAE263AD /* UIFeedbackGenerator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		19EC33F5460495F3DF24B3A42DD2F74E /* DelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6ED6755A6F3FB0AA5B0099DDA59E07 /* DelegateProxy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1BDF3F107588477E83E6ADBE7FDEB069 /* SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D98CBEE8D892E99D3B19F5786FA183 /* SignalProducer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1C08E2FE355B153676B6B974CB1C2174 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9F78A0B45AC7281E0A1F59361DA27F /* UIButton.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1C9E97A67169AE6C1572DE441C034775 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5492B730381848ABFFD424EA6E697E /* UICollectionView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1E8D0505F59C040B6C78519A5DCECD9E /* UIStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0610D2139142279BDCCF63FE337B124D /* UIStepper.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		257B6D1FFD1AE29271791AA18F6F715F /* Pods-Chemist-domain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D979FF20B4562B998BB2C97C104607 /* Pods-Chemist-domain-dummy.m */; };
-		2C3ACB40499F7137783CB075D7B35B39 /* UIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B4BC8552B3E7415593C40D7A5C4B0 /* UIRefreshControl.swift */; };
-		2CCBF01EF0C06C8E9CD34BDD0B81E8EA /* UnidirectionalBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A13E8F295A8B92335DFF09779E651 /* UnidirectionalBinding.swift */; };
-		2F9FF1BC4C42C7321033F6BA45691E39 /* ReactiveSwift+Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C4B83C3B2747ABDD2F210224D457B /* ReactiveSwift+Lifetime.swift */; };
-		31AEC7596DA143B7D20ACC8A5C8BD415 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4ED1C5348E1E503E27EB0F293D622C /* UIView.swift */; };
-		31C1A6867DE469BD80F717D4CE28EA54 /* DelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6ED6755A6F3FB0AA5B0099DDA59E07 /* DelegateProxy.swift */; };
-		353F7B1F767CB0E5F5130CD42C3AA7D2 /* UninhabitedTypeGuards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CAD8C579D4785ECB91D0FC684AF077 /* UninhabitedTypeGuards.swift */; };
-		375638B5DE5718AAA196202377395F14 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D5EF60FD65F529CDD692939A8B43B6 /* Signal.swift */; };
-		3C7C29256C2C999871268171327981D0 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A45B7922F4D3D0B9D9420349B776D /* Optional.swift */; };
-		3CDCC3B0DC355CDA7FDA99C0D4C09D8B /* UINotification​Feedback​Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65001FC4D8E12C22E0119886A328B701 /* UINotification​Feedback​Generator.swift */; };
+		26687D141CD969538B3F792C55BDEC84 /* EventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F653A6A7DDF9738EAE2BEA38896FFCD /* EventLogger.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2FAEA5A3F26AAD7142B795D8FCD124D2 /* ObjCRuntimeAliases.m in Sources */ = {isa = PBXBuildFile; fileRef = B18279F09FF5BB39548FFC1CA4FCA787 /* ObjCRuntimeAliases.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3449A6DFF39A59E98768D60197D0AB62 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB5FC92889882455B1BB216D8F0903F /* NSLayoutConstraint.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		398A7802C94DAAEC178852A059B255AF /* NSObject+Intercepting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28C3AE3E88D2A2D2B839697EEC52FF /* NSObject+Intercepting.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3A3A078A1D45AA845F6BEEFFEB7C8C48 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827AB3E16C95EBDB51098F6B9E171098 /* Bag.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3B8094D5BD164A63CAA2F6719788D561 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59838FD6DF5601FC9FD644DE9ED53465 /* Property.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3EE241847DD08AA06CE2A437CC30CB70 /* Flatten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCE4068BBA8B75727B643FCE364415 /* Flatten.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		405E2F8F5C473BBB0ABB84781E7DB5C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42925D121046FA179D6F3114DE3BE5D0 /* Foundation.framework */; };
-		40E715E5BD1DE3988FAC6963B4A77C76 /* NSObject+Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669ADD0B4D5687FD4C035E24FCF87F2 /* NSObject+Lifetime.swift */; };
-		45656BD78BEC684039845310C4A9F0E3 /* ObjC+Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0C32DFCE65A147D3A0C0EDB0EC48 /* ObjC+Messages.swift */; };
-		4C42ED52914437BBB17FB1F446D7F27C /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6F94942AD7A9354100C2C4866BE98 /* FoundationExtensions.swift */; };
-		4C766445DA4B0225F8631F2137A5BA43 /* CocoaTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66FC1E8E60814E274B90D6FFD4F59A /* CocoaTarget.swift */; };
-		4C822A238589E27D3DC4949E21544EE1 /* UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A589678322A5EBE958120144E49B43 /* UISegmentedControl.swift */; };
-		4C9C120D80B985D1E29410A31A09D31D /* UIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F2E9AF54F4723B882CBD1B70BE9DE3 /* UIProgressView.swift */; };
+		408B1938F7F2402DFBBEA07E231D1C97 /* ObjC+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BC87437B6FD07989B44ABBECD02815 /* ObjC+Constants.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		45C59CEA4B684EAA2A51F51B893C17F0 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716EDDED2BF4A681615B1C98AB76FAF9 /* UITextField.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		47044EBB4161C5CAFFB3467AF7CD5A81 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A056E913417D71A6F5FC3C82B9B1E /* Atomic.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		47798447660B6C97B66BBDE6BAA4A712 /* UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4F3A42DCD03217E1A59C24A93FF24 /* UISwitch.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4B7567D4C5E2D5C45B2EF34C5365AAC0 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D5EF60FD65F529CDD692939A8B43B6 /* Signal.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4C8B85F905DB4C00B5316E494CCD32EE /* Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E53F7D4CB042DB4024B3C9CA4025B /* Reactive.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4D21293FC6F08A01EDAFFBC4143C6D86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42925D121046FA179D6F3114DE3BE5D0 /* Foundation.framework */; };
-		4E5C0A025C26A358F6FBCED67114885C /* ReusableComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB985B5A0D5323E922D579AE258BCB /* ReusableComponents.swift */; };
+		4EDACCAC7BA8696F31369C726FF88C37 /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC0ABDF54FC1B91D2A81BE06F0EB20 /* Deprecations+Removals.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4FBEAF60055C20822783A189D18369B2 /* NSObject+ReactiveExtensionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7F374B6DF5665F6829ACB0FFAE480 /* NSObject+ReactiveExtensionsProvider.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		55980B62DCD1CB04EA3C3D3F5ED32839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42925D121046FA179D6F3114DE3BE5D0 /* Foundation.framework */; };
-		560B39CE75CBED6FF1FA2AE115E55B3C /* ReactiveSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BBA5F79BB08F4BD68EA8E088AC32BB /* ReactiveSwift-dummy.m */; };
-		5797DBE72D2E6EB2259C5EA95B6E3D82 /* ResultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A3720E4068CB31D6C6BCD14CD98181 /* ResultExtensions.swift */; };
+		55B195D9854F569987DF6126675F3E4F /* UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67778848D550A9AB6F96622FE504C012 /* UINavigationItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		58742DF60DAC16AFCDD7BF3756D60728 /* CocoaTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66FC1E8E60814E274B90D6FFD4F59A /* CocoaTarget.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		59251428DB1F7E41EE8AA8AB1887048B /* Pods-Chemist-platform-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3656AFC911FAE470ED0B55EA8FBA45 /* Pods-Chemist-platform-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A038278F5C5EC5B00749D4057EF0F87 /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17662A4ACBD2E901B802976077A33344 /* Deprecations+Removals.swift */; };
-		5D1F8B8D833C92369CE7B9F5BB2563F4 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C15DDDEB15A902F505199FF0F17AD4 /* UISearchBar.swift */; };
-		5E7C34B8C1B51B871C1C1D5107CAE28C /* UISelection​Feedback​Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1CE80CFE2881F94646A488E7C9C1 /* UISelection​Feedback​Generator.swift */; };
-		5FB53EF94E4DEB4FCCB0B419F6F9441E /* NSObject+BindingTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EEF67E182E6BDB8F8D16607188F65B /* NSObject+BindingTarget.swift */; };
-		608AC2E23237B47709819BEB85ABAAAF /* UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D807D521B2148FFEDFAF41005E61E2 /* UITabBarItem.swift */; };
-		60B00D9E4339AA23CDD9CECAEA3944CA /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB5FC92889882455B1BB216D8F0903F /* NSLayoutConstraint.swift */; };
-		61891495ABAE1CDC6ABDCEE537014056 /* NSObject+Intercepting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28C3AE3E88D2A2D2B839697EEC52FF /* NSObject+Intercepting.swift */; };
-		62AD96F69FB3B69568B87FFAD557C16F /* UIFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD884E762A8E546060B7CBAE263AD /* UIFeedbackGenerator.swift */; };
-		6AF688C9F3B3D998C88D5DFC5CDA0982 /* UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789203520F079B26F54069D3F40BAEC /* UISlider.swift */; };
+		593F70ACC0A10C65162B64DB2D1E6081 /* UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A589678322A5EBE958120144E49B43 /* UISegmentedControl.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5DC62ABAC0AC2CA8A067CD8550FF55EF /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6F94942AD7A9354100C2C4866BE98 /* FoundationExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		646E337B415687EB5D3A608B35FFDA61 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ADA879CC43A1270B497148E5E2B329 /* UITextView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6B186A4FDDE5211600E2F301402072EA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA029FE11F9EA1F218309C272366B50 /* Result.framework */; };
-		6C220C9B4C49B3C9E19082D943FBD2E5 /* ObjC+Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9437FF94D03A02B49F40B124A122F11 /* ObjC+Runtime.swift */; };
-		6D55FC4D7700B4A5B1A0B5092516A56F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC679A31F1949616678348FD925D2E /* Result.swift */; };
-		6E172C3B69D0428836A8D9E22F8249F0 /* ObjC+Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAA4C202927F2BE1443D07303B8C5DD /* ObjC+Selector.swift */; };
-		6F0D1C5A31FB074B0AB323F124A79EFA /* SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D98CBEE8D892E99D3B19F5786FA183 /* SignalProducer.swift */; };
-		70F6348C7E1F14B4AD8CE4851FBF97D7 /* UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80441C50F6B623FA0F241A2CB5DD83 /* UIDatePicker.swift */; };
-		71324D9DEF4E9D53D55314896F3D4FE6 /* ObjC+RuntimeSubclassing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC17DCCF6FEA0D654ACBFAFBFC5A5B5 /* ObjC+RuntimeSubclassing.swift */; };
+		6C9BF2D60D5652A468F5BAD1491803E5 /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E3FF6ECF1FA2C03F772A8FFC38C3D /* UIActivityIndicatorView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7459F3B88633E8D86A861D5EB83B8E4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42925D121046FA179D6F3114DE3BE5D0 /* Foundation.framework */; };
-		751CDC8AD02910679090A3B8C953F316 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED8A52ADEC6BB56BD16080B6DA32956 /* Observer.swift */; };
-		76AB6CD38EB868A5AF9C99B3D94CB25E /* UIKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D97D701522D0B78954A60B0BEC4CAD /* UIKeyboard.swift */; };
-		7827FFC4E5C39294AAE1304B708CF108 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C5DC77C5E00408FB8D1DD979668D3 /* Disposable.swift */; };
-		790C1A9DEBF390D0E7735FE9BC4CD4BC /* Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E53F7D4CB042DB4024B3C9CA4025B /* Reactive.swift */; };
-		7DC80A833767859DDD5B245374FB0139 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967D2D586ECFE740424D2CB8BABC654B /* UIBarButtonItem.swift */; };
-		7FA8144E6921369A6FF31F0D54D6BB5B /* UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BFAA487786498FD23560E5974B716C /* UIGestureRecognizer.swift */; };
-		8418D737C837037CDB2FB4E9A7A1AF76 /* NSObject+ObjCRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E3BDBA468293B48CC227586D8F9420 /* NSObject+ObjCRuntime.swift */; };
-		866EFBD0B153CE1D7C05D75D89BB85DF /* ObjC+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BC87437B6FD07989B44ABBECD02815 /* ObjC+Constants.swift */; };
+		74E82D04CEAE638126A6E46B619FA3CC /* NSObject+Synchronizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91048EFCAB2A14C8252415EE047EB791 /* NSObject+Synchronizing.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		765583AEC9B3EE07A3E130D65BD290E8 /* UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0067DB7E19CD955C01E39B2D127AFFF /* UIPickerView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		79441190FAEAC12854E1F00865214E3F /* UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D807D521B2148FFEDFAF41005E61E2 /* UITabBarItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7B958182F1C02BF74CBEF4F60F077ED4 /* UIImpact​Feedback​Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B2C4CBF176E80CFB525129C2BFBFE /* UIImpact​Feedback​Generator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7D33E6B95B787B15F9A66012154F6F56 /* NSObject+KeyValueObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32777DB1E0D29CFBE9347444D5506681 /* NSObject+KeyValueObserving.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		800877B016464C0AFCC0949124951C5A /* UnidirectionalBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A13E8F295A8B92335DFF09779E651 /* UnidirectionalBinding.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		87142082A6F6ADE3DB8668C1C8779D29 /* ReactiveSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC001FCD04475096BE125A91E2AAEC3 /* ReactiveSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		895FD849BF4128C9EBAA6E9E30AE2F88 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A2448063944342544EC316768037B /* Action.swift */; };
-		8BEA8B19669149D6E31F8F6AA91F2FD4 /* NSObject+Synchronizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91048EFCAB2A14C8252415EE047EB791 /* NSObject+Synchronizing.swift */; };
-		8F7FD23CF6A3718C2BE31940087F8C47 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690CF5622BE350FE5CF76B8C0672025A /* UIScrollView.swift */; };
+		87462C4A91F7F41D047AE2BAEEF14264 /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17662A4ACBD2E901B802976077A33344 /* Deprecations+Removals.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		879F15141BDA3BEB7B0B7B12203CBEA0 /* UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789203520F079B26F54069D3F40BAEC /* UISlider.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8B71D26F8D19069A3F7D2305F95B796D /* DynamicProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030EE28D24B87A952A32437B4EB927D /* DynamicProperty.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8DACE80B24A28A4481AA57E0D614DF1B /* ReactiveSwift+Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C4B83C3B2747ABDD2F210224D457B /* ReactiveSwift+Lifetime.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8EEF914A7BCFF11FC7908FB76D022134 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4ED1C5348E1E503E27EB0F293D622C /* UIView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		93404594DA6282FF1A35D0E10F8B9FDF /* Result-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40DA3D1CF721D2289742D43CE8509E /* Result-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		955446B18D39A84CE0BFF2B7DA08AF43 /* UIBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952CFCACB094D2BC3373C239F6BDA07 /* UIBarItem.swift */; };
+		9489639378E00C2C63069756287B2A37 /* ReusableComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB985B5A0D5323E922D579AE258BCB /* ReusableComponents.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		959468BED5F24C2587C4589463D591D9 /* ReactiveCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 51EEE544EB9B8DDEBBCEDF33F95469C1 /* ReactiveCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97F127AA075C9B8F39012F628617507F /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5492B730381848ABFFD424EA6E697E /* UICollectionView.swift */; };
-		9CA69032BCB8166D949B7985FD67735E /* NSObject+Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AFEFEE88706AD20BB97F22966989C3 /* NSObject+Association.swift */; };
-		A276AFBFD00EFE936468B97254473205 /* NSObject+KeyValueObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32777DB1E0D29CFBE9347444D5506681 /* NSObject+KeyValueObserving.swift */; };
-		A33616D02D1C6E97240A748DD13216A3 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE87E0647C74A0131BEDA6484835B2C /* UITableView.swift */; };
-		A6543419A39E73FC222327D677527220 /* DynamicProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030EE28D24B87A952A32437B4EB927D /* DynamicProperty.swift */; };
-		ABB23BB3087E2FB561E0A0D1C8BDFF3A /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF473678E1ACC22ACF359310C6C7BA7 /* ResultProtocol.swift */; };
+		9799D17F7DD912BE6B71175F14279A9F /* UINotification​Feedback​Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65001FC4D8E12C22E0119886A328B701 /* UINotification​Feedback​Generator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9CC58E143BA534907E8AB8CA096F100D /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690CF5622BE350FE5CF76B8C0672025A /* UIScrollView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9F2FD8F16D6165DFEBCFC36F7A321518 /* ReactiveCocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEED08B7966E7C977CF3433D93BBD18 /* ReactiveCocoa-dummy.m */; };
+		A2EBACED07D4625FBBDFE8D59FE64B6F /* ObjC+Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9437FF94D03A02B49F40B124A122F11 /* ObjC+Runtime.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A335F51B3CA4299A17658B53DD578608 /* UninhabitedTypeGuards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CAD8C579D4785ECB91D0FC684AF077 /* UninhabitedTypeGuards.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A5ED730FF88477B48B1567D2054DC5E0 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967D2D586ECFE740424D2CB8BABC654B /* UIBarButtonItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A80C50CA33E2D6BF85E549B92B5EF0DD /* ObjC+RuntimeSubclassing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC17DCCF6FEA0D654ACBFAFBFC5A5B5 /* ObjC+RuntimeSubclassing.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AA790B07BBD3E0014B2559C0A453946D /* ObjC+Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAA4C202927F2BE1443D07303B8C5DD /* ObjC+Selector.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AC44801C32D70961250F6C6F83A6AE3C /* Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6ACACE30D22B3F713C2246C6FC926 /* Lifetime.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AC53EB3246FBE1A9271E1A41BACAABA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42925D121046FA179D6F3114DE3BE5D0 /* Foundation.framework */; };
-		AC8D6FA2C683CD3ABDF774F9085B12F1 /* UIImpact​Feedback​Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B2C4CBF176E80CFB525129C2BFBFE /* UIImpact​Feedback​Generator.swift */; };
-		B118FEEFB0A7109EB6B8515E42CA7D45 /* UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0067DB7E19CD955C01E39B2D127AFFF /* UIPickerView.swift */; };
+		AFF17B287894E316DB6214FD982BDCCE /* NSObject+BindingTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EEF67E182E6BDB8F8D16607188F65B /* NSObject+BindingTarget.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B6A85ABD47E4622F706381F8EF6AAE88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42925D121046FA179D6F3114DE3BE5D0 /* Foundation.framework */; };
-		B802CF11F49560D2E1347CC3EEA4A126 /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC0ABDF54FC1B91D2A81BE06F0EB20 /* Deprecations+Removals.swift */; };
-		C17B3D3A2E1C23258635208B438A1F0D /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59838FD6DF5601FC9FD644DE9ED53465 /* Property.swift */; };
+		BA1B6093D8B0673EFF667030004CE770 /* UIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B4BC8552B3E7415593C40D7A5C4B0 /* UIRefreshControl.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BB68DFD884DCB48D4653523EF65DEDEA /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A2448063944342544EC316768037B /* Action.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C18DD926FE64EC8AF31D8827E4B87A4C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA029FE11F9EA1F218309C272366B50 /* Result.framework */; };
-		C1E4D7F0AE112BDF6B864B4477A99FAE /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E3FF6ECF1FA2C03F772A8FFC38C3D /* UIActivityIndicatorView.swift */; };
-		C2FFF9285B0DA1DC690F47E7D55C5F24 /* CocoaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB5330C51C75782CFB3C37D6F3EBA0 /* CocoaAction.swift */; };
+		C26CB96E83049096191BDE0277758224 /* UISelection​Feedback​Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1CE80CFE2881F94646A488E7C9C1 /* UISelection​Feedback​Generator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C27145F132750336000C93027E4026CB /* ValidatingProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48BD126A5FC7C613EF721C46E74934 /* ValidatingProperty.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C78052D382A19F330B7ACC32DBAF4BB3 /* CocoaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB5330C51C75782CFB3C37D6F3EBA0 /* CocoaAction.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C7AAED99F2880150EAB2486A4FA86384 /* Pods-Chemist-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C11C6F14B1BDDAE8C632EB63CDEC2852 /* Pods-Chemist-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF9C48E72CCA6137A6A3B53A8351FB6E /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A056E913417D71A6F5FC3C82B9B1E /* Atomic.swift */; };
-		D405B591661AD3857F26632CCA951D0D /* Result-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BFF4F8B4E93F7C98AB643610116B16 /* Result-dummy.m */; };
-		D79C3BB7CFEE05FA29638CF13AA0FFBC /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD509CFBB6AB8BDCD89D776460214C /* Scheduler.swift */; };
-		D852426C1AB3BB134E7A6EDE770EB27B /* UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4F3A42DCD03217E1A59C24A93FF24 /* UISwitch.swift */; };
-		DB817989BF7F726C546C79192E49407C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA2AAD8549E18E9C35BDA5AF206A43 /* Event.swift */; };
+		C933C8CB54593617635A26E5525684AD /* UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80441C50F6B623FA0F241A2CB5DD83 /* UIDatePicker.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CB3169B09B342037DAF3911FCECCD856 /* NSObject+Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AFEFEE88706AD20BB97F22966989C3 /* NSObject+Association.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CF7B5AC5AE9231DDBD62B74850B8BAB6 /* UIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F2E9AF54F4723B882CBD1B70BE9DE3 /* UIProgressView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CFABC53FA58909A2377499002FEBE42A /* UIKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D97D701522D0B78954A60B0BEC4CAD /* UIKeyboard.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CFE31951B7E6D15BAEDCDD4337DF2FBA /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88413D3423B7D98A262B64705C973C2 /* UILabel.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DBEA4036AC18B8EE8FECC17799455E47 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3147EC7015CAF000FBA16CB497D627AC /* ReactiveSwift.framework */; };
-		E202AD403720509F138073E795746FC2 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9F78A0B45AC7281E0A1F59361DA27F /* UIButton.swift */; };
-		E250A5C92FBBCF910D0451B24B06CE68 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BD3180F9144C86AA3FB9178CE40C0 /* UIImageView.swift */; };
-		E28FC6B8D3225E842C432A21093E73B7 /* UIStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0610D2139142279BDCCF63FE337B124D /* UIStepper.swift */; };
-		E61511E29AC839030BFA3B9302FE28E2 /* NSObject+ReactiveExtensionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7F374B6DF5665F6829ACB0FFAE480 /* NSObject+ReactiveExtensionsProvider.swift */; };
+		DCE461CDB63F07CA832E0A362D2FDB6A /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C5DC77C5E00408FB8D1DD979668D3 /* Disposable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E0EE155D1CD8434C69B0A096E30D3175 /* ObjC+Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0C32DFCE65A147D3A0C0EDB0EC48 /* ObjC+Messages.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E6F92A4B157B3FCADFE4110BD0611161 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE87E0647C74A0131BEDA6484835B2C /* UITableView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EE00EDAF1E0F9803EB408E5E62AAE408 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C15DDDEB15A902F505199FF0F17AD4 /* UISearchBar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EEB0F618B7B5E96D486BEEECC5D84026 /* UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BFAA487786498FD23560E5974B716C /* UIGestureRecognizer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EF6FEA8C476A2500570B75F16A5DB179 /* Pods-Chemist-domain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D031B44BC9DA5DCC792F56110129B6 /* Pods-Chemist-domain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFA37EFD68C99A82BA814E87609CA0CD /* UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67778848D550A9AB6F96622FE504C012 /* UINavigationItem.swift */; };
+		EFC53B171689C43CA15D8B3E6855D43E /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A45B7922F4D3D0B9D9420349B776D /* Optional.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F14925969292EAF7AF3516929C589E8C /* ResultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A3720E4068CB31D6C6BCD14CD98181 /* ResultExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F22170DF09998FEA21197E837D16FE97 /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04CF06B5B8F19A7347588DE11C3B4B /* UIControl.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F2F984D7F6FECA1643546A82B5F25960 /* ObjCRuntimeAliases.h in Headers */ = {isa = PBXBuildFile; fileRef = 933D26B52C6D25774115DAD80D1E3C03 /* ObjCRuntimeAliases.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F3E3E6B274D3FD8CA387FE820CB1144F /* ReactiveSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BBA5F79BB08F4BD68EA8E088AC32BB /* ReactiveSwift-dummy.m */; };
 		F538DDD97366C9FA44CBF2BA834B28E7 /* Pods-Chemist-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2CAD868F5351F57FDCE6DAB7C3897D /* Pods-Chemist-dummy.m */; };
-		F5D1BC4B34BE7CE44E514AD292CFC2A6 /* Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6ACACE30D22B3F713C2246C6FC926 /* Lifetime.swift */; };
-		F833E3CECCF87FEF7DD6BFAE9DF91F90 /* ObjCRuntimeAliases.m in Sources */ = {isa = PBXBuildFile; fileRef = B18279F09FF5BB39548FFC1CA4FCA787 /* ObjCRuntimeAliases.m */; };
+		F60182F8B5591393D15D73DEA4772C87 /* NSObject+Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669ADD0B4D5687FD4C035E24FCF87F2 /* NSObject+Lifetime.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F8F6F76B74214D4068A617B11F785D1E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BD3180F9144C86AA3FB9178CE40C0 /* UIImageView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FA12F3F07EDAD4E9F3F6A95CEEDC1E26 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF473678E1ACC22ACF359310C6C7BA7 /* ResultProtocol.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FA9FEDCD1BBD55049F1664FF97B877FD /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA2AAD8549E18E9C35BDA5AF206A43 /* Event.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FC2F6EC166BD1DFCBDBF95DDFB7DCA2E /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD509CFBB6AB8BDCD89D776460214C /* Scheduler.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FDEBFAE58207258B2F41C74949B1C36A /* Result-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BFF4F8B4E93F7C98AB643610116B16 /* Result-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -705,7 +705,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51514E8DB7C71DFB00275EFE7A35C0C5 /* Build configuration list for PBXNativeTarget "ReactiveCocoa" */;
 			buildPhases = (
-				E91B2607398AA854293408C0A4F001B3 /* Sources */,
+				DB4FB2BCBD28699AFE9E3EF29DC0C47E /* Sources */,
 				1502ADF08CE5199934708E6AAE860BCE /* Frameworks */,
 				113F542C78E140C5E5C116AD6AB95324 /* Headers */,
 			);
@@ -744,7 +744,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB09B66D0265F2700F9A0E5CA96B7EBD /* Build configuration list for PBXNativeTarget "Result" */;
 			buildPhases = (
-				9BFC1E8028A63F633E5DA88E565BE15E /* Sources */,
+				DE2C647F9FB45F755FBAA24312316F2D /* Sources */,
 				E68A09DD4A32F29977E27EB513EB204F /* Frameworks */,
 				C75800F1FDC1FEC986E306F9A81D65C2 /* Headers */,
 			);
@@ -781,7 +781,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9EB55D3E5595E70532E9DF8E8D18E5D /* Build configuration list for PBXNativeTarget "ReactiveSwift" */;
 			buildPhases = (
-				21625A1F4001E903B774386976C6D2FE /* Sources */,
+				139B07CEE1E847AB731A9CC609938F27 /* Sources */,
 				7535248C8685E2C22D87B687AD5D74EF /* Frameworks */,
 				CE009AFBD6BA55713549F361CF6742C3 /* Headers */,
 			);
@@ -855,32 +855,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21625A1F4001E903B774386976C6D2FE /* Sources */ = {
+		139B07CEE1E847AB731A9CC609938F27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				895FD849BF4128C9EBAA6E9E30AE2F88 /* Action.swift in Sources */,
-				CF9C48E72CCA6137A6A3B53A8351FB6E /* Atomic.swift in Sources */,
-				219B14F98A756152F699B30FE2133D92 /* Bag.swift in Sources */,
-				B802CF11F49560D2E1347CC3EEA4A126 /* Deprecations+Removals.swift in Sources */,
-				7827FFC4E5C39294AAE1304B708CF108 /* Disposable.swift in Sources */,
-				DB817989BF7F726C546C79192E49407C /* Event.swift in Sources */,
-				1298C04E064CEB4C15248AAA12933F92 /* EventLogger.swift in Sources */,
-				1261002EEEE638E82ECED8744CCC22C3 /* Flatten.swift in Sources */,
-				4C42ED52914437BBB17FB1F446D7F27C /* FoundationExtensions.swift in Sources */,
-				F5D1BC4B34BE7CE44E514AD292CFC2A6 /* Lifetime.swift in Sources */,
-				751CDC8AD02910679090A3B8C953F316 /* Observer.swift in Sources */,
-				3C7C29256C2C999871268171327981D0 /* Optional.swift in Sources */,
-				C17B3D3A2E1C23258635208B438A1F0D /* Property.swift in Sources */,
-				790C1A9DEBF390D0E7735FE9BC4CD4BC /* Reactive.swift in Sources */,
-				560B39CE75CBED6FF1FA2AE115E55B3C /* ReactiveSwift-dummy.m in Sources */,
-				5797DBE72D2E6EB2259C5EA95B6E3D82 /* ResultExtensions.swift in Sources */,
-				D79C3BB7CFEE05FA29638CF13AA0FFBC /* Scheduler.swift in Sources */,
-				375638B5DE5718AAA196202377395F14 /* Signal.swift in Sources */,
-				6F0D1C5A31FB074B0AB323F124A79EFA /* SignalProducer.swift in Sources */,
-				2CCBF01EF0C06C8E9CD34BDD0B81E8EA /* UnidirectionalBinding.swift in Sources */,
-				353F7B1F767CB0E5F5130CD42C3AA7D2 /* UninhabitedTypeGuards.swift in Sources */,
-				0D5824C2593620AA98857970A5CCCD3F /* ValidatingProperty.swift in Sources */,
+				BB68DFD884DCB48D4653523EF65DEDEA /* Action.swift in Sources */,
+				47044EBB4161C5CAFFB3467AF7CD5A81 /* Atomic.swift in Sources */,
+				3A3A078A1D45AA845F6BEEFFEB7C8C48 /* Bag.swift in Sources */,
+				4EDACCAC7BA8696F31369C726FF88C37 /* Deprecations+Removals.swift in Sources */,
+				DCE461CDB63F07CA832E0A362D2FDB6A /* Disposable.swift in Sources */,
+				FA9FEDCD1BBD55049F1664FF97B877FD /* Event.swift in Sources */,
+				26687D141CD969538B3F792C55BDEC84 /* EventLogger.swift in Sources */,
+				3EE241847DD08AA06CE2A437CC30CB70 /* Flatten.swift in Sources */,
+				5DC62ABAC0AC2CA8A067CD8550FF55EF /* FoundationExtensions.swift in Sources */,
+				AC44801C32D70961250F6C6F83A6AE3C /* Lifetime.swift in Sources */,
+				066E15DC702CEE15A974A41E57CE6C80 /* Observer.swift in Sources */,
+				EFC53B171689C43CA15D8B3E6855D43E /* Optional.swift in Sources */,
+				3B8094D5BD164A63CAA2F6719788D561 /* Property.swift in Sources */,
+				4C8B85F905DB4C00B5316E494CCD32EE /* Reactive.swift in Sources */,
+				F3E3E6B274D3FD8CA387FE820CB1144F /* ReactiveSwift-dummy.m in Sources */,
+				F14925969292EAF7AF3516929C589E8C /* ResultExtensions.swift in Sources */,
+				FC2F6EC166BD1DFCBDBF95DDFB7DCA2E /* Scheduler.swift in Sources */,
+				4B7567D4C5E2D5C45B2EF34C5365AAC0 /* Signal.swift in Sources */,
+				1BDF3F107588477E83E6ADBE7FDEB069 /* SignalProducer.swift in Sources */,
+				800877B016464C0AFCC0949124951C5A /* UnidirectionalBinding.swift in Sources */,
+				A335F51B3CA4299A17658B53DD578608 /* UninhabitedTypeGuards.swift in Sources */,
+				C27145F132750336000C93027E4026CB /* ValidatingProperty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -900,73 +900,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BFC1E8028A63F633E5DA88E565BE15E /* Sources */ = {
+		DB4FB2BCBD28699AFE9E3EF29DC0C47E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D405B591661AD3857F26632CCA951D0D /* Result-dummy.m in Sources */,
-				6D55FC4D7700B4A5B1A0B5092516A56F /* Result.swift in Sources */,
-				ABB23BB3087E2FB561E0A0D1C8BDFF3A /* ResultProtocol.swift in Sources */,
+				C78052D382A19F330B7ACC32DBAF4BB3 /* CocoaAction.swift in Sources */,
+				58742DF60DAC16AFCDD7BF3756D60728 /* CocoaTarget.swift in Sources */,
+				19EC33F5460495F3DF24B3A42DD2F74E /* DelegateProxy.swift in Sources */,
+				87462C4A91F7F41D047AE2BAEEF14264 /* Deprecations+Removals.swift in Sources */,
+				8B71D26F8D19069A3F7D2305F95B796D /* DynamicProperty.swift in Sources */,
+				3449A6DFF39A59E98768D60197D0AB62 /* NSLayoutConstraint.swift in Sources */,
+				CB3169B09B342037DAF3911FCECCD856 /* NSObject+Association.swift in Sources */,
+				AFF17B287894E316DB6214FD982BDCCE /* NSObject+BindingTarget.swift in Sources */,
+				398A7802C94DAAEC178852A059B255AF /* NSObject+Intercepting.swift in Sources */,
+				7D33E6B95B787B15F9A66012154F6F56 /* NSObject+KeyValueObserving.swift in Sources */,
+				F60182F8B5591393D15D73DEA4772C87 /* NSObject+Lifetime.swift in Sources */,
+				0B1A392D521680B15DD39246B0C9F59B /* NSObject+ObjCRuntime.swift in Sources */,
+				4FBEAF60055C20822783A189D18369B2 /* NSObject+ReactiveExtensionsProvider.swift in Sources */,
+				74E82D04CEAE638126A6E46B619FA3CC /* NSObject+Synchronizing.swift in Sources */,
+				408B1938F7F2402DFBBEA07E231D1C97 /* ObjC+Constants.swift in Sources */,
+				E0EE155D1CD8434C69B0A096E30D3175 /* ObjC+Messages.swift in Sources */,
+				A2EBACED07D4625FBBDFE8D59FE64B6F /* ObjC+Runtime.swift in Sources */,
+				A80C50CA33E2D6BF85E549B92B5EF0DD /* ObjC+RuntimeSubclassing.swift in Sources */,
+				AA790B07BBD3E0014B2559C0A453946D /* ObjC+Selector.swift in Sources */,
+				2FAEA5A3F26AAD7142B795D8FCD124D2 /* ObjCRuntimeAliases.m in Sources */,
+				9F2FD8F16D6165DFEBCFC36F7A321518 /* ReactiveCocoa-dummy.m in Sources */,
+				8DACE80B24A28A4481AA57E0D614DF1B /* ReactiveSwift+Lifetime.swift in Sources */,
+				9489639378E00C2C63069756287B2A37 /* ReusableComponents.swift in Sources */,
+				6C9BF2D60D5652A468F5BAD1491803E5 /* UIActivityIndicatorView.swift in Sources */,
+				A5ED730FF88477B48B1567D2054DC5E0 /* UIBarButtonItem.swift in Sources */,
+				0DA78669C514A123F3E740EC7B834769 /* UIBarItem.swift in Sources */,
+				1C08E2FE355B153676B6B974CB1C2174 /* UIButton.swift in Sources */,
+				1C9E97A67169AE6C1572DE441C034775 /* UICollectionView.swift in Sources */,
+				F22170DF09998FEA21197E837D16FE97 /* UIControl.swift in Sources */,
+				C933C8CB54593617635A26E5525684AD /* UIDatePicker.swift in Sources */,
+				12D087104D0E4AEAEBD54613CF2EB93A /* UIFeedbackGenerator.swift in Sources */,
+				EEB0F618B7B5E96D486BEEECC5D84026 /* UIGestureRecognizer.swift in Sources */,
+				F8F6F76B74214D4068A617B11F785D1E /* UIImageView.swift in Sources */,
+				7B958182F1C02BF74CBEF4F60F077ED4 /* UIImpact​Feedback​Generator.swift in Sources */,
+				CFABC53FA58909A2377499002FEBE42A /* UIKeyboard.swift in Sources */,
+				CFE31951B7E6D15BAEDCDD4337DF2FBA /* UILabel.swift in Sources */,
+				55B195D9854F569987DF6126675F3E4F /* UINavigationItem.swift in Sources */,
+				9799D17F7DD912BE6B71175F14279A9F /* UINotification​Feedback​Generator.swift in Sources */,
+				765583AEC9B3EE07A3E130D65BD290E8 /* UIPickerView.swift in Sources */,
+				CF7B5AC5AE9231DDBD62B74850B8BAB6 /* UIProgressView.swift in Sources */,
+				BA1B6093D8B0673EFF667030004CE770 /* UIRefreshControl.swift in Sources */,
+				9CC58E143BA534907E8AB8CA096F100D /* UIScrollView.swift in Sources */,
+				EE00EDAF1E0F9803EB408E5E62AAE408 /* UISearchBar.swift in Sources */,
+				593F70ACC0A10C65162B64DB2D1E6081 /* UISegmentedControl.swift in Sources */,
+				C26CB96E83049096191BDE0277758224 /* UISelection​Feedback​Generator.swift in Sources */,
+				879F15141BDA3BEB7B0B7B12203CBEA0 /* UISlider.swift in Sources */,
+				1E8D0505F59C040B6C78519A5DCECD9E /* UIStepper.swift in Sources */,
+				47798447660B6C97B66BBDE6BAA4A712 /* UISwitch.swift in Sources */,
+				79441190FAEAC12854E1F00865214E3F /* UITabBarItem.swift in Sources */,
+				E6F92A4B157B3FCADFE4110BD0611161 /* UITableView.swift in Sources */,
+				45C59CEA4B684EAA2A51F51B893C17F0 /* UITextField.swift in Sources */,
+				646E337B415687EB5D3A608B35FFDA61 /* UITextView.swift in Sources */,
+				8EEF914A7BCFF11FC7908FB76D022134 /* UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E91B2607398AA854293408C0A4F001B3 /* Sources */ = {
+		DE2C647F9FB45F755FBAA24312316F2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2FFF9285B0DA1DC690F47E7D55C5F24 /* CocoaAction.swift in Sources */,
-				4C766445DA4B0225F8631F2137A5BA43 /* CocoaTarget.swift in Sources */,
-				31C1A6867DE469BD80F717D4CE28EA54 /* DelegateProxy.swift in Sources */,
-				5A038278F5C5EC5B00749D4057EF0F87 /* Deprecations+Removals.swift in Sources */,
-				A6543419A39E73FC222327D677527220 /* DynamicProperty.swift in Sources */,
-				60B00D9E4339AA23CDD9CECAEA3944CA /* NSLayoutConstraint.swift in Sources */,
-				9CA69032BCB8166D949B7985FD67735E /* NSObject+Association.swift in Sources */,
-				5FB53EF94E4DEB4FCCB0B419F6F9441E /* NSObject+BindingTarget.swift in Sources */,
-				61891495ABAE1CDC6ABDCEE537014056 /* NSObject+Intercepting.swift in Sources */,
-				A276AFBFD00EFE936468B97254473205 /* NSObject+KeyValueObserving.swift in Sources */,
-				40E715E5BD1DE3988FAC6963B4A77C76 /* NSObject+Lifetime.swift in Sources */,
-				8418D737C837037CDB2FB4E9A7A1AF76 /* NSObject+ObjCRuntime.swift in Sources */,
-				E61511E29AC839030BFA3B9302FE28E2 /* NSObject+ReactiveExtensionsProvider.swift in Sources */,
-				8BEA8B19669149D6E31F8F6AA91F2FD4 /* NSObject+Synchronizing.swift in Sources */,
-				866EFBD0B153CE1D7C05D75D89BB85DF /* ObjC+Constants.swift in Sources */,
-				45656BD78BEC684039845310C4A9F0E3 /* ObjC+Messages.swift in Sources */,
-				6C220C9B4C49B3C9E19082D943FBD2E5 /* ObjC+Runtime.swift in Sources */,
-				71324D9DEF4E9D53D55314896F3D4FE6 /* ObjC+RuntimeSubclassing.swift in Sources */,
-				6E172C3B69D0428836A8D9E22F8249F0 /* ObjC+Selector.swift in Sources */,
-				F833E3CECCF87FEF7DD6BFAE9DF91F90 /* ObjCRuntimeAliases.m in Sources */,
-				16F04BC1578E1422DF16104BB9A103B9 /* ReactiveCocoa-dummy.m in Sources */,
-				2F9FF1BC4C42C7321033F6BA45691E39 /* ReactiveSwift+Lifetime.swift in Sources */,
-				4E5C0A025C26A358F6FBCED67114885C /* ReusableComponents.swift in Sources */,
-				C1E4D7F0AE112BDF6B864B4477A99FAE /* UIActivityIndicatorView.swift in Sources */,
-				7DC80A833767859DDD5B245374FB0139 /* UIBarButtonItem.swift in Sources */,
-				955446B18D39A84CE0BFF2B7DA08AF43 /* UIBarItem.swift in Sources */,
-				E202AD403720509F138073E795746FC2 /* UIButton.swift in Sources */,
-				97F127AA075C9B8F39012F628617507F /* UICollectionView.swift in Sources */,
-				17ACF2AF3183DE1E18F95183076050A5 /* UIControl.swift in Sources */,
-				70F6348C7E1F14B4AD8CE4851FBF97D7 /* UIDatePicker.swift in Sources */,
-				62AD96F69FB3B69568B87FFAD557C16F /* UIFeedbackGenerator.swift in Sources */,
-				7FA8144E6921369A6FF31F0D54D6BB5B /* UIGestureRecognizer.swift in Sources */,
-				E250A5C92FBBCF910D0451B24B06CE68 /* UIImageView.swift in Sources */,
-				AC8D6FA2C683CD3ABDF774F9085B12F1 /* UIImpact​Feedback​Generator.swift in Sources */,
-				76AB6CD38EB868A5AF9C99B3D94CB25E /* UIKeyboard.swift in Sources */,
-				05DEB807E6620E7B270D64C9B28AD872 /* UILabel.swift in Sources */,
-				EFA37EFD68C99A82BA814E87609CA0CD /* UINavigationItem.swift in Sources */,
-				3CDCC3B0DC355CDA7FDA99C0D4C09D8B /* UINotification​Feedback​Generator.swift in Sources */,
-				B118FEEFB0A7109EB6B8515E42CA7D45 /* UIPickerView.swift in Sources */,
-				4C9C120D80B985D1E29410A31A09D31D /* UIProgressView.swift in Sources */,
-				2C3ACB40499F7137783CB075D7B35B39 /* UIRefreshControl.swift in Sources */,
-				8F7FD23CF6A3718C2BE31940087F8C47 /* UIScrollView.swift in Sources */,
-				5D1F8B8D833C92369CE7B9F5BB2563F4 /* UISearchBar.swift in Sources */,
-				4C822A238589E27D3DC4949E21544EE1 /* UISegmentedControl.swift in Sources */,
-				5E7C34B8C1B51B871C1C1D5107CAE28C /* UISelection​Feedback​Generator.swift in Sources */,
-				6AF688C9F3B3D998C88D5DFC5CDA0982 /* UISlider.swift in Sources */,
-				E28FC6B8D3225E842C432A21093E73B7 /* UIStepper.swift in Sources */,
-				D852426C1AB3BB134E7A6EDE770EB27B /* UISwitch.swift in Sources */,
-				608AC2E23237B47709819BEB85ABAAAF /* UITabBarItem.swift in Sources */,
-				A33616D02D1C6E97240A748DD13216A3 /* UITableView.swift in Sources */,
-				2033A44C7860EF6A432C11000A9E8F88 /* UITextField.swift in Sources */,
-				0DA8FF6159F6E42EF826CE2FA52CAA08 /* UITextView.swift in Sources */,
-				31AEC7596DA143B7D20ACC8A5C8BD415 /* UIView.swift in Sources */,
+				FDEBFAE58207258B2F41C74949B1C36A /* Result-dummy.m in Sources */,
+				015DE5AF2A4A89B9BF5B8C4AE4BCFCF6 /* Result.swift in Sources */,
+				FA12F3F07EDAD4E9F3F6A95CEEDC1E26 /* ResultProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
