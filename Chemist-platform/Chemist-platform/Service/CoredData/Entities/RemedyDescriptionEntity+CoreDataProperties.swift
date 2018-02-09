@@ -16,6 +16,7 @@ extension RemedyDescriptionEntity {
         return NSFetchRequest<RemedyDescriptionEntity>(entityName: "RemedyDescriptionEntity")
     }
 
+    @NSManaged public var id: String
     @NSManaged public var bbd: String?
     @NSManaged public var cautions: String?
     @NSManaged public var contraindications: String?

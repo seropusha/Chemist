@@ -19,9 +19,7 @@ end
 
 target 'Chemist-platform' do
     for_all
-      pod 'Alamofire', '~> 4.6.0'
-      pod 'AlamofireNetworkActivityIndicator', '~> 2.2.0'
-      pod 'AlamofireNetworkActivityLogger', :git => 'https://github.com/konkab/AlamofireNetworkActivityLogger'
+    pod 'Moya/ReactiveSwift', '~> 11.0'
     project 'Chemist-platform/Chemist-platform.xcodeproj'
 end
 
