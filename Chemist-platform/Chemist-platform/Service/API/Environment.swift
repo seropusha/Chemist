@@ -15,3 +15,12 @@ enum Environment {
     
     static let current: Environment = .dev
 }
+
+extension Environment {
+    var baseURL: URL {
+        switch self {
+        default:
+            return URL(string: "localhost:7070")!
+        }
+    }
+}
