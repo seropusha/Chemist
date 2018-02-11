@@ -20,7 +20,7 @@ extension Environment {
     var baseURL: URL {
         switch self {
         default:
-            return URL(string: "localhost:7070")!
+            return URL(string: "http//:localhost:7070")!
         }
     }
 }

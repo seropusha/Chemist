@@ -30,8 +30,6 @@ public struct Progress<T> {
     }
 }
 
-
-
 //MARK: - Response Deserialization
 
 protocol APIDeserialization {
