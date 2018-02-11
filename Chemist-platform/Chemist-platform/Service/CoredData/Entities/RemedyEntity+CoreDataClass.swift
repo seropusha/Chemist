@@ -14,14 +14,14 @@ public class RemedyEntity: NSManagedObject {
     
     func populate(_ item: RemedyItem) {
         id = item.id
-//        farmGroup = item.farmGroup
-//        farmType = item.farmType
-//        jenericIDs = item.jenericIDs
-//        manufactured = item.manufactured
-//        substance = item.substance
-//        title = item.title
-//        titleFull = item.titleFull
-//        type = item.type
+        farmGroup = item.farmGroup
+        farmType = item.farmType
+        jenericIDs = item.jenericIDs
+        manufactured = item.manufactured
+        substance = item.substance
+        title = item.title
+        titleFull = item.titleFull
+        type = item.type
 
         if let descriptionItem = item.description,
             let currentContext = managedObjectContext {
