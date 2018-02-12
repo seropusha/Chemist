@@ -14,6 +14,7 @@ import Result
 //MARK: Errors
 enum APIError: Error {
     case deserialization(Error)
+    case server([Error])
 }
 
 //MARK: - Progress struct
@@ -41,6 +42,10 @@ struct ResponseDeserialization: APIDeserialization {
         do {
             guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [AnyHashable:Any] else {
                 throw APIError.deserialization(NSError(domain: "com.chemist-platform.deserialization.error", code: -1000, userInfo: nil))
+            }
+            if let errors = json["errors"] as? [AnyHashable: Any] {
+                //TODO PARSE ERRORS
+                throw APIError.server([])
             }
             return json
         } catch let parsingError {
@@ -82,8 +87,8 @@ class APIClient: APISession {
                             let json = try strongSelf.deseriazlizationDelegate.deserialize(response.data)
                             observer.send(value: T(json))
                             observer.sendCompleted()
-                        } catch let deserializeError {
-                            observer.send(error: AnyError(deserializeError))
+                        } catch let error {
+                            observer.send(error: AnyError(error))
                         }
                     case let .failure(moyaError):
                         observer.send(error: AnyError(moyaError))
@@ -106,8 +111,8 @@ class APIClient: APISession {
                                     let json = try self?.deseriazlizationDelegate.deserialize(data) {
                                     object = T(json)
                                 }
-                            } catch let deserializeError {
-                                observer.send(error: AnyError(deserializeError))
+                            } catch let error {
+                                observer.send(error: AnyError(error))
                             }
                             observer.send(value: Progress(progress: moyaProgress.progressObject, response: object))
                             observer.sendCompleted()
