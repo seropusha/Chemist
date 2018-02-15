@@ -8,21 +8,8 @@
 
 import Foundation
 
-internal struct RemedyItem: JSONable {
+internal struct RemedyItem {
 
-    enum Keys {
-        static let id           = "id"
-        static let title        = "title"
-        static let titleFull    = "title_big"
-        static let substance    = "substance"
-        static let manufactured = "manufactured"
-        static let type         = "class"
-        static let farmType     = "farm_utics_action_short"
-        static let farmGroup    = "farm_group"
-        static let description  = "description"
-        static let jenericIDs   = "jeneric_id"
-    }
-    
     var farmGroup: String
     var farmType: String
     var id: String
@@ -33,20 +20,35 @@ internal struct RemedyItem: JSONable {
     var titleFull: String
     var type: String
     var description: RemedyDescriptionItem?
+}
+
+extension RemedyItem: Decodable {
     
-    init(_ json: [AnyHashable : Any]) {
-        guard let identifier: String = json.value(for: Keys.id) else {
-            fatalError("\(RemedyItem.self) must have id")
-        }
-        id = identifier
-        farmType = json.value(for: Keys.farmType) ?? ""
-        farmGroup = json.value(for: Keys.farmGroup) ?? ""
-        jenericIDs = json.value(for: Keys.jenericIDs)
-        manufactured = json.value(for: Keys.manufactured) ?? ""
-        substance = json.value(for: Keys.substance) ?? ""
-        title = json.value(for: Keys.title) ?? ""
-        titleFull = json.value(for: Keys.titleFull) ?? ""
-        type = json.value(for: Keys.type) ?? ""
-        description = json.value(for: Keys.description)
+    private enum RemedyKeys: String, CodingKey {
+        case id           = "id"
+        case title        = "title"
+        case titleFull    = "title_big"
+        case substance    = "substance"
+        case manufactured = "manufactured"
+        case type         = "class"
+        case farmType     = "farm_utics_action_short"
+        case farmGroup    = "farm_group"
+        case description  = "description"
+        case jenericIDs   = "jeneric_id"
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: RemedyKeys.self)
+        
+        id = try container.decode(String.self, forKey: .id)
+        title = try container.decode(String.self, forKey: .title)
+        titleFull = try container.decode(String.self, forKey: .titleFull)
+        substance = try container.decode(String.self, forKey: .substance)
+        manufactured = try container.decode(String.self, forKey: .manufactured)
+        type = try container.decode(String.self, forKey: .type)
+        farmType = try container.decode(String.self, forKey: .farmType)
+        farmGroup = try container.decode(String.self, forKey: .farmGroup)
+        description = try container.decode(RemedyDescriptionItem?.self, forKey: .description)
+        jenericIDs = try container.decode(String.self, forKey: .jenericIDs)
     }
 }

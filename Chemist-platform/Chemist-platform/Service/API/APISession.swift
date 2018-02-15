@@ -11,12 +11,6 @@ import Moya
 import ReactiveSwift
 import Result
 
-//MARK: Errors
-enum APIError: Error {
-    case deserialization(Error)
-    case server([Error])
-}
-
 //MARK: - Progress struct
 
 public struct Progress<T> {
@@ -37,45 +31,23 @@ protocol APIDeserialization {
     func deserialize(_ data: Data) throws -> [AnyHashable:Any]
 }
 
-struct ResponseDeserialization: APIDeserialization {
-    func deserialize(_ data: Data) throws -> [AnyHashable:Any] {
-        do {
-            guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [AnyHashable:Any] else {
-                throw APIError.deserialization(NSError(domain: "com.chemist-platform.deserialization.error", code: -1000, userInfo: nil))
-            }
-            if let errors = json["errors"] as? [AnyHashable: Any] {
-                //TODO PARSE ERRORS
-                throw APIError.server([])
-            }
-            return json
-        } catch let parsingError {
-            throw APIError.deserialization(parsingError)
-        }
-    }
-}
-
 //MARK: - API Client
 
 protocol APISession {
-    func request<T: JSONable>(_ target: MultiTarget) -> SignalProducer<T, AnyError>
-    func request<T: JSONable>(_ target: MultiTarget, queue: DispatchQueue?) -> SignalProducer<T, AnyError>
-    func requestWithProgress<T: JSONable>(_ target: MultiTarget, queue: DispatchQueue?) -> SignalProducer<Progress<T>, AnyError>
+    func request<T: Decodable>(_ target: MultiTarget) -> SignalProducer<T, AnyError>
+    func request<T: Decodable>(_ target: MultiTarget, queue: DispatchQueue?) -> SignalProducer<T, AnyError>
+    func requestWithProgress<T: Decodable>(_ target: MultiTarget, queue: DispatchQueue?) -> SignalProducer<Progress<T>, AnyError>
 }
 
 class APIClient: APISession {
     
     let provider = MoyaProvider<MultiTarget>(plugins: [NetworkLoggerPlugin(verbose: true)])
-    var deseriazlizationDelegate: APIDeserialization!
     
-    init() {
-        deseriazlizationDelegate = ResponseDeserialization()
-    }
-    
-    func request<T: JSONable>(_ target: MultiTarget) -> SignalProducer<T, AnyError> {
+    func request<T: Decodable>(_ target: MultiTarget) -> SignalProducer<T, AnyError> {
         return request(target, queue: nil)
     }
     
-    func request<T: JSONable>(_ target: MultiTarget, queue: DispatchQueue?) -> SignalProducer<T, AnyError> {
+    func request<T: Decodable>(_ target: MultiTarget, queue: DispatchQueue?) -> SignalProducer<T, AnyError> {
         return SignalProducer<T, AnyError> { [weak self] observer, lifetime in
             guard let strongSelf = self else { return }
             strongSelf.provider.reactive.request(target, callbackQueue: queue)
@@ -84,8 +56,7 @@ class APIClient: APISession {
                     switch result {
                     case let .success(response):
                         do {
-                            let json = try strongSelf.deseriazlizationDelegate.deserialize(response.data)
-                            observer.send(value: T(json))
+                            observer.send(value: try JSONDecoder().decode(T.self, from: response.data))
                             observer.sendCompleted()
                         } catch let error {
                             observer.send(error: AnyError(error))
@@ -96,7 +67,7 @@ class APIClient: APISession {
                 }
         }
     }
-    func requestWithProgress<T: JSONable>(_ target: MultiTarget, queue: DispatchQueue?) -> SignalProducer<Progress<T>, AnyError> {
+    func requestWithProgress<T: Decodable>(_ target: MultiTarget, queue: DispatchQueue?) -> SignalProducer<Progress<T>, AnyError> {
         return SignalProducer<Progress<T>, AnyError> { [weak self] observer, lifetime in
             guard let strongSelf = self else { return }
             strongSelf.provider.reactive.requestWithProgress(target, callbackQueue: queue)
@@ -107,9 +78,8 @@ class APIClient: APISession {
                         if moyaProgress.completed {
                             var object: T?
                             do {
-                                if let data = moyaProgress.response?.data,
-                                    let json = try self?.deseriazlizationDelegate.deserialize(data) {
-                                    object = T(json)
+                                if let data = moyaProgress.response?.data {
+                                    object = try JSONDecoder().decode(T.self, from: data)
                                 }
                             } catch let error {
                                 observer.send(error: AnyError(error))

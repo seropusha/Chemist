@@ -27,7 +27,9 @@ public enum RemedyAPI {
 
 
 extension RemedyAPI: TargetType {
+    
     public var baseURL: URL { return Environment.current.baseURL }
+    
     public var path: String {
         switch self {
         case let .getByID(id):
@@ -42,6 +44,7 @@ extension RemedyAPI: TargetType {
             return "remedy"
         }
     }
+    
     public var method: Moya.Method {
         return .get
     }
@@ -63,11 +66,9 @@ extension RemedyAPI: TargetType {
         }
     }
     public var validationType: ValidationType {
-        switch self {
-        default:
-            return .successCodes
-        }
+        return .successCodes
     }
+    
     //TODO ADD CUStOM RESPONSE
     public var sampleData: Data {
         switch self {
@@ -83,6 +84,7 @@ extension RemedyAPI: TargetType {
             return "".data(using: .utf8)!
         }
     }
+    
     public var headers: [String: String]? {
         return nil
     }

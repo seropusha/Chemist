@@ -8,28 +8,7 @@
 
 import Foundation
 
-internal struct RemedyDescriptionItem: JSONable {
-    
-    enum Keys {
-        static let id                               = "id"
-        static let useDuringPregnancy               = "use-during-pregnancy"
-        static let contraindications                = "contraindications"
-        static let storageConditions                = "storage-conditions"
-        static let indications                      = "indications"
-        static let drugInteractions                 = "drug-interactions"
-        static let dosing                           = "dosing"
-        static let bbd                              = "bbd"
-        static let pharmacokinetics                 = "pharmacokinetics"
-        static let precautions                      = "precautions"
-        static let pharmacologyActionDescription    = "pharmacologyActionDescription"
-        static let sideEffects                      = "side-effects"
-        static let useInImpairedRenalFunction       = "use-in-impaired-renal-function"
-        static let releaseForm                      = "release-form"
-        static let specialCases                     = "special-cases"
-        static let cautions                         = "cautions"
-        static let pharmacodynamics                 = "pharmacodynamics"
-        static let drugOverdose                     = "drug-overdose"
-    }
+internal struct RemedyDescriptionItem {
     
     var id: String
     var bbd: String?
@@ -49,28 +28,51 @@ internal struct RemedyDescriptionItem: JSONable {
     var storageConditions: String?
     var useDuringPregnancy: String?
     var useInImpairedRenalFunction: String?
+}
+
+extension RemedyDescriptionItem: Decodable {
     
-    init(_ json: [AnyHashable : Any]) {
-        guard let identifier: String = json.value(for: Keys.id) else {
-            fatalError("\(RemedyDescriptionItem.self) must have id")
-        }
-        id = identifier
-        bbd = json.value(for: Keys.bbd)
-        cautions = json.value(for: Keys.cautions)
-        contraindications = json.value(for: Keys.contraindications)
-        dosing = json.value(for: Keys.dosing)
-        drugInteractions = json.value(for: Keys.drugInteractions)
-        drugOverdose = json.value(for: Keys.drugOverdose)
-        indications = json.value(for: Keys.indications)
-        pharmacodynamics = json.value(for: Keys.pharmacodynamics)
-        pharmacokinetics = json.value(for: Keys.pharmacokinetics)
-        pharmacologyActionDescription = json.value(for: Keys.pharmacologyActionDescription)
-        precautions = json.value(for: Keys.precautions)
-        releaseForm = json.value(for: Keys.releaseForm)
-        sideEffects = json.value(for: Keys.sideEffects)
-        specialCases = json.value(for: Keys.specialCases)
-        storageConditions = json.value(for: Keys.storageConditions)
-        useDuringPregnancy = json.value(for: Keys.useDuringPregnancy)
-        useInImpairedRenalFunction = json.value(for: Keys.useInImpairedRenalFunction)
+    enum RemedyDescriptionKeys: String, CodingKey {
+        case id                               = "id"
+        case useDuringPregnancy               = "use-during-pregnancy"
+        case contraindications                = "contraindications"
+        case storageConditions                = "storage-conditions"
+        case indications                      = "indications"
+        case drugInteractions                 = "drug-interactions"
+        case dosing                           = "dosing"
+        case bbd                              = "bbd"
+        case pharmacokinetics                 = "pharmacokinetics"
+        case precautions                      = "precautions"
+        case pharmacologyActionDescription    = "pharmacologyActionDescription"
+        case sideEffects                      = "side-effects"
+        case useInImpairedRenalFunction       = "use-in-impaired-renal-function"
+        case releaseForm                      = "release-form"
+        case specialCases                     = "special-cases"
+        case cautions                         = "cautions"
+        case pharmacodynamics                 = "pharmacodynamics"
+        case drugOverdose                     = "drug-overdose"
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: RemedyDescriptionKeys.self)
+        
+        id = try container.decode(String.self, forKey: .id)
+        useDuringPregnancy = try container.decode(String?.self, forKey: .useDuringPregnancy)
+        contraindications = try container.decode(String?.self, forKey: .contraindications)
+        storageConditions = try container.decode(String?.self, forKey: .storageConditions)
+        indications = try container.decode(String?.self, forKey: .indications)
+        drugInteractions = try container.decode(String?.self, forKey: .drugInteractions)
+        dosing = try container.decode(String?.self, forKey: .dosing)
+        bbd = try container.decode(String?.self, forKey: .bbd)
+        pharmacokinetics = try container.decode(String?.self, forKey: .pharmacokinetics)
+        precautions = try container.decode(String?.self, forKey: .precautions)
+        pharmacologyActionDescription = try container.decode(String?.self, forKey: .pharmacologyActionDescription)
+        sideEffects = try container.decode(String?.self, forKey: .sideEffects)
+        useInImpairedRenalFunction = try container.decode(String?.self, forKey: .useInImpairedRenalFunction)
+        releaseForm = try container.decode(String?.self, forKey: .releaseForm)
+        specialCases = try container.decode(String?.self, forKey: .specialCases)
+        cautions = try container.decode(String?.self, forKey: .cautions)
+        pharmacodynamics = try container.decode(String?.self, forKey: .pharmacodynamics)
+        drugOverdose = try container.decode(String?.self, forKey: .drugOverdose)
     }
 }
