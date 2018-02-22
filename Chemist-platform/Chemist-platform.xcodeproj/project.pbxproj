@@ -143,6 +143,7 @@
 				BA5DD09B202DCDA600719A89 /* Entities */,
 				165BD2CF2030A27700FB3195 /* Environment.swift */,
 				BA5DD099202DCB6300719A89 /* APISession.swift */,
+				165BD2D62030B2E300FB3195 /* RemedyAPI.swift */,
 				16EFE0E620323D4C00F71C75 /* APIResponse.swift */,
 			);
 			path = API;
@@ -153,7 +154,6 @@
 			children = (
 				BA5DD09E202DCDEA00719A89 /* RemedyItem.swift */,
 				BA5DD0A2202DCEE200719A89 /* RemedyDescriptionItem.swift */,
-				165BD2D62030B2E300FB3195 /* RemedyAPI.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
