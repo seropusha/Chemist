@@ -27,23 +27,23 @@ import Result
 
 //MARK: - API Client
 
-public typealias Router = TargetType
+public typealias Request = TargetType
 
 protocol APISession {
-    func request(_ target: MultiTarget, callbackQueue: DispatchQueue?) -> SignalProducer<Moya.Response, MoyaError>
-    func requestWithProgress(_ target: MultiTarget, callbackQueue: DispatchQueue?) -> SignalProducer<Moya.ProgressResponse, MoyaError>
+    func request(_ target: Request, callbackQueue: DispatchQueue?) -> SignalProducer<Moya.Response, MoyaError>
+    func requestWithProgress(_ target: Request, callbackQueue: DispatchQueue?) -> SignalProducer<Moya.ProgressResponse, MoyaError>
 }
 
 class APIClient: APISession {
     
-    let provider = MoyaProvider<MultiTarget>(plugins: [NetworkLoggerPlugin(verbose: true)])
+    lazy var provider = MoyaProvider<MultiTarget>(plugins: [NetworkLoggerPlugin(verbose: true)])
     
-    func request(_ target: MultiTarget, callbackQueue: DispatchQueue?) -> SignalProducer<Moya.Response, MoyaError> {
-        return provider.reactive.request(target, callbackQueue: callbackQueue)
+    func request(_ target: Request, callbackQueue: DispatchQueue?) -> SignalProducer<Moya.Response, MoyaError> {
+        return provider.reactive.request(MultiTarget(target), callbackQueue: callbackQueue)
     }
     
-    func requestWithProgress(_ target: MultiTarget, callbackQueue: DispatchQueue?) -> SignalProducer<Moya.ProgressResponse, MoyaError> {
-        return provider.reactive.requestWithProgress(target, callbackQueue: callbackQueue)
+    func requestWithProgress(_ target: Request, callbackQueue: DispatchQueue?) -> SignalProducer<Moya.ProgressResponse, MoyaError> {
+        return provider.reactive.requestWithProgress(MultiTarget(target), callbackQueue: callbackQueue)
     }
     
 //    func request<T: Decodable>(_ target: MultiTarget) -> SignalProducer<T, AnyError> {

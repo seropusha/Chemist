@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		16A43A81202B213600D4A84A /* Chemist_domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A43A7F202B213600D4A84A /* Chemist_domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAB35B06203F048D00189EEA /* RemedyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B05203F048D00189EEA /* RemedyUseCase.swift */; };
+		BAB35B0E203F0BBE00189EEA /* RemedyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B0C203F0BBD00189EEA /* RemedyItem.swift */; };
+		BAB35B0F203F0BBE00189EEA /* RemedyDescriptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B0D203F0BBE00189EEA /* RemedyDescriptionItem.swift */; };
 		E591D6FD400AB54A68EA3A71 /* Pods_Chemist_domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3F5C9DE14F5B9B4765E31 /* Pods_Chemist_domain.framework */; };
 /* End PBXBuildFile section */
 
@@ -17,6 +20,9 @@
 		16A43A7F202B213600D4A84A /* Chemist_domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chemist_domain.h; sourceTree = "<group>"; };
 		16A43A80202B213600D4A84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9B3F5C9DE14F5B9B4765E31 /* Pods_Chemist_domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chemist_domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB35B05203F048D00189EEA /* RemedyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemedyUseCase.swift; sourceTree = "<group>"; };
+		BAB35B0C203F0BBD00189EEA /* RemedyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemedyItem.swift; sourceTree = "<group>"; };
+		BAB35B0D203F0BBE00189EEA /* RemedyDescriptionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemedyDescriptionItem.swift; sourceTree = "<group>"; };
 		E280956165B7155FD2BD66CF /* Pods-Chemist-domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-domain.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-domain/Pods-Chemist-domain.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +59,8 @@
 		16A43A7E202B213600D4A84A /* Chemist-domain */ = {
 			isa = PBXGroup;
 			children = (
+				BAB35B09203F0B5200189EEA /* Entities */,
+				BAB35B04203F033C00189EEA /* UseCases */,
 				16A43A7F202B213600D4A84A /* Chemist_domain.h */,
 				16A43A80202B213600D4A84A /* Info.plist */,
 			);
@@ -74,6 +82,23 @@
 				A9B3F5C9DE14F5B9B4765E31 /* Pods_Chemist_domain.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAB35B04203F033C00189EEA /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				BAB35B05203F048D00189EEA /* RemedyUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BAB35B09203F0B5200189EEA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BAB35B0C203F0BBD00189EEA /* RemedyItem.swift */,
+				BAB35B0D203F0BBE00189EEA /* RemedyDescriptionItem.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +146,7 @@
 				TargetAttributes = {
 					16A43A7B202B213600D4A84A = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -193,6 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB35B0E203F0BBE00189EEA /* RemedyItem.swift in Sources */,
+				BAB35B06203F048D00189EEA /* RemedyUseCase.swift in Sources */,
+				BAB35B0F203F0BBE00189EEA /* RemedyDescriptionItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E280956165B7155FD2BD66CF /* Pods-Chemist-domain.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -328,6 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Chemist-domain";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0DDBAF52EF310317055E53F8 /* Pods-Chemist-domain.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

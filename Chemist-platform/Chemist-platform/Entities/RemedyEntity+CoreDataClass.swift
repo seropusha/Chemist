@@ -1,28 +1,16 @@
 //
-//  Remedy.swift
-//  Chemist-platform
+//  RemedyEntity+CoreDataClass.swift
+//  
 //
-//  Created by Sergey Navka on 2/7/18.
-//  Copyright © 2018 Navka Sergey. All rights reserved.
+//  Created by Sergey Navka on 2/6/18.
+//
 //
 
 import Foundation
+import CoreData
 
-internal struct RemedyItem {
-
-    var farmGroup: String
-    var farmType: String
-    var id: String
-    var jenericIDs: String?
-    var manufactured: String
-    var substance: String
-    var title: String
-    var titleFull: String
-    var type: String
-    var description: RemedyDescriptionItem?
-}
-
-extension RemedyItem: Decodable {
+@objc(RemedyEntity)
+public class RemedyEntity: NSManagedObject, Decodable {
     
     private enum RemedyKeys: String, CodingKey {
         case id           = "id"
@@ -37,9 +25,16 @@ extension RemedyItem: Decodable {
         case jenericIDs   = "jeneric_id"
     }
     
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: RemedyKeys.self)
+    public convenience required init(from decoder: Decoder) throws {
         
+        guard let entityDescription = NSEntityDescription.entity(forEntityName: "\(RemedyDescriptionEntity.self)", in: decoder.managedContext) else {
+            fatalError("")
+        }
+        
+        self.init(entity: entityDescription, insertInto: decoder.managedContext)
+        
+        let container = try decoder.container(keyedBy: RemedyKeys.self)
+
         id = try container.decode(String.self, forKey: .id)
         title = try container.decode(String.self, forKey: .title)
         titleFull = try container.decode(String.self, forKey: .titleFull)
@@ -48,7 +43,7 @@ extension RemedyItem: Decodable {
         type = try container.decode(String.self, forKey: .type)
         farmType = try container.decode(String.self, forKey: .farmType)
         farmGroup = try container.decode(String.self, forKey: .farmGroup)
-        description = try container.decode(RemedyDescriptionItem?.self, forKey: .description)
+        info = try container.decode(RemedyDescriptionEntity?.self, forKey: .description)
         jenericIDs = try container.decode(String.self, forKey: .jenericIDs)
     }
 }

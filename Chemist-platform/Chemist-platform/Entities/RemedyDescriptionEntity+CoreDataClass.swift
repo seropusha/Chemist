@@ -1,36 +1,30 @@
 //
-//  RemedyDescription.swift
-//  Chemist-platform
+//  RemedyDescriptionEntity+CoreDataClass.swift
+//  
 //
-//  Created by Sergey Navka on 2/7/18.
-//  Copyright © 2018 Navka Sergey. All rights reserved.
+//  Created by Sergey Navka on 2/6/18.
+//
 //
 
 import Foundation
+import CoreData
 
-internal struct RemedyDescriptionItem {
-    
-    var id: String
-    var bbd: String?
-    var cautions: String?
-    var contraindications: String?
-    var dosing: String?
-    var drugInteractions: String?
-    var drugOverdose: String?
-    var indications: String?
-    var pharmacodynamics: String?
-    var pharmacokinetics: String?
-    var pharmacologyActionDescription: String?
-    var precautions: String?
-    var releaseForm: String?
-    var sideEffects: String?
-    var specialCases: String?
-    var storageConditions: String?
-    var useDuringPregnancy: String?
-    var useInImpairedRenalFunction: String?
+extension CodingUserInfoKey {
+    static let contextKey = CodingUserInfoKey(rawValue: "ManagedObjectContext")!
 }
 
-extension RemedyDescriptionItem: Decodable {
+extension Decoder {
+    var managedContext: NSManagedObjectContext {
+        guard let context = userInfo[.contextKey] as? NSManagedObjectContext else {
+            fatalError("Decoder hasn't NSManagedObjectContext in userInfo")
+        }
+        return context
+    }
+}
+
+
+@objc(RemedyDescriptionEntity)
+public class RemedyDescriptionEntity: NSManagedObject, Decodable {
     
     enum RemedyDescriptionKeys: String, CodingKey {
         case id                               = "id"
@@ -53,7 +47,12 @@ extension RemedyDescriptionItem: Decodable {
         case drugOverdose                     = "drug-overdose"
     }
     
-    public init(from decoder: Decoder) throws {
+    public convenience required init(from decoder: Decoder) throws {
+        guard let entityDescription = NSEntityDescription.entity(forEntityName: "\(type(of: self))", in: decoder.managedContext) else {
+            fatalError("NSEntityDescription not found")
+        }
+        self.init(entity: entityDescription, insertInto: decoder.managedContext)
+        
         let container = try decoder.container(keyedBy: RemedyDescriptionKeys.self)
         
         id = try container.decode(String.self, forKey: .id)
@@ -74,5 +73,14 @@ extension RemedyDescriptionItem: Decodable {
         cautions = try container.decode(String?.self, forKey: .cautions)
         pharmacodynamics = try container.decode(String?.self, forKey: .pharmacodynamics)
         drugOverdose = try container.decode(String?.self, forKey: .drugOverdose)
+        
+        decoder.managedContext.allEntities(withType: RemedyEntity.self, predicate: NSPredicate(format: "id == %@", id))
+            .take(last: 1)
+            .startWithResult({ [weak self] result in
+                if case let .success(remedies) = result {
+                    self?.parent = remedies.first
+                }
+            })
+
     }
 }
