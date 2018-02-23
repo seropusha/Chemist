@@ -9,7 +9,7 @@
 import Moya
 
 extension API {
-    enum RemedyAPI: TargetType {
+    enum RemedyAPI: Request {
         
         public enum SearchType: String {
             case substance
@@ -66,7 +66,7 @@ extension API {
             return .successCodes
         }
         
-        //TODO ADD CUStOM RESPONSE
+        //TODO ADD CUSTOM RESPONSE
         public var sampleData: Data {
             return "".data(using: .utf8)!
         }

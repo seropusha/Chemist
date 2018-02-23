@@ -20,6 +20,8 @@
 		16A43A71202B20FF00D4A84A /* PersistentRemedyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A68202B20FF00D4A84A /* PersistentRemedyRepository.swift */; };
 		16EFE0E720323D4C00F71C75 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFE0E620323D4C00F71C75 /* APIResponse.swift */; };
 		8CFD3B60435286F092EF2C89 /* Pods_Chemist_platform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A947A3A7C4942ECC8286C1 /* Pods_Chemist_platform.framework */; };
+		BA4DE1EC204048FF0031703B /* Decoder+ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4DE1EB204048FF0031703B /* Decoder+ManagedObjectContext.swift */; };
+		BA4DE1F1204051ED0031703B /* Reactive+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4DE1F0204051ED0031703B /* Reactive+Extension.swift */; };
 		BA5DD09A202DCB6300719A89 /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5DD099202DCB6300719A89 /* APISession.swift */; };
 		BAB35B03203ED46D00189EEA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B02203ED46D00189EEA /* API.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,8 @@
 		53DCA844ED393F0698AE3BF7 /* Pods-Chemist-platform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-platform.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-platform/Pods-Chemist-platform.debug.xcconfig"; sourceTree = "<group>"; };
 		5C41C64453EDA418AC671794 /* Pods-Chemist-platform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-platform.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-platform/Pods-Chemist-platform.release.xcconfig"; sourceTree = "<group>"; };
 		B0A947A3A7C4942ECC8286C1 /* Pods_Chemist_platform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chemist_platform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4DE1EB204048FF0031703B /* Decoder+ManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decoder+ManagedObjectContext.swift"; sourceTree = "<group>"; };
+		BA4DE1F0204051ED0031703B /* Reactive+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Extension.swift"; sourceTree = "<group>"; };
 		BA5DD099202DCB6300719A89 /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
 		BAB35B02203ED46D00189EEA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +83,7 @@
 		16A43A53202B209700D4A84A /* Chemist-platform */ = {
 			isa = PBXGroup;
 			children = (
+				BA4DE1EA204048E60031703B /* Extensions */,
 				165BD2CF2030A27700FB3195 /* Environment.swift */,
 				16A43A5D202B20FF00D4A84A /* CoredData */,
 				16A43A5E202B20FF00D4A84A /* Entities */,
@@ -126,6 +131,15 @@
 				5C41C64453EDA418AC671794 /* Pods-Chemist-platform.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA4DE1EA204048E60031703B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA4DE1EB204048FF0031703B /* Decoder+ManagedObjectContext.swift */,
+				BA4DE1F0204051ED0031703B /* Reactive+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BA5DD098202DCAF900719A89 /* API */ = {
@@ -277,6 +291,8 @@
 				165BD2D72030B2E300FB3195 /* RemedyAPI.swift in Sources */,
 				16A43A6F202B20FF00D4A84A /* CoreDataService.swift in Sources */,
 				16A43A6B202B20FF00D4A84A /* RemedyDescriptionEntity+CoreDataProperties.swift in Sources */,
+				BA4DE1F1204051ED0031703B /* Reactive+Extension.swift in Sources */,
+				BA4DE1EC204048FF0031703B /* Decoder+ManagedObjectContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

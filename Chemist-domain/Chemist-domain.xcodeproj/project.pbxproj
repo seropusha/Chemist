@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		16A43A81202B213600D4A84A /* Chemist_domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A43A7F202B213600D4A84A /* Chemist_domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAB35B06203F048D00189EEA /* RemedyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B05203F048D00189EEA /* RemedyUseCase.swift */; };
-		BAB35B0E203F0BBE00189EEA /* RemedyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B0C203F0BBD00189EEA /* RemedyItem.swift */; };
-		BAB35B0F203F0BBE00189EEA /* RemedyDescriptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B0D203F0BBE00189EEA /* RemedyDescriptionItem.swift */; };
+		BAB35B0E203F0BBE00189EEA /* Remedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B0C203F0BBD00189EEA /* Remedy.swift */; };
+		BAB35B0F203F0BBE00189EEA /* RemedyDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B0D203F0BBE00189EEA /* RemedyDescription.swift */; };
 		E591D6FD400AB54A68EA3A71 /* Pods_Chemist_domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3F5C9DE14F5B9B4765E31 /* Pods_Chemist_domain.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,8 +21,8 @@
 		16A43A80202B213600D4A84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9B3F5C9DE14F5B9B4765E31 /* Pods_Chemist_domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chemist_domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB35B05203F048D00189EEA /* RemedyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemedyUseCase.swift; sourceTree = "<group>"; };
-		BAB35B0C203F0BBD00189EEA /* RemedyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemedyItem.swift; sourceTree = "<group>"; };
-		BAB35B0D203F0BBE00189EEA /* RemedyDescriptionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemedyDescriptionItem.swift; sourceTree = "<group>"; };
+		BAB35B0C203F0BBD00189EEA /* Remedy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Remedy.swift; sourceTree = "<group>"; };
+		BAB35B0D203F0BBE00189EEA /* RemedyDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemedyDescription.swift; sourceTree = "<group>"; };
 		E280956165B7155FD2BD66CF /* Pods-Chemist-domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-domain.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-domain/Pods-Chemist-domain.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,8 +95,8 @@
 		BAB35B09203F0B5200189EEA /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				BAB35B0C203F0BBD00189EEA /* RemedyItem.swift */,
-				BAB35B0D203F0BBE00189EEA /* RemedyDescriptionItem.swift */,
+				BAB35B0C203F0BBD00189EEA /* Remedy.swift */,
+				BAB35B0D203F0BBE00189EEA /* RemedyDescription.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -219,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAB35B0E203F0BBE00189EEA /* RemedyItem.swift in Sources */,
+				BAB35B0E203F0BBE00189EEA /* Remedy.swift in Sources */,
 				BAB35B06203F048D00189EEA /* RemedyUseCase.swift in Sources */,
-				BAB35B0F203F0BBE00189EEA /* RemedyDescriptionItem.swift in Sources */,
+				BAB35B0F203F0BBE00189EEA /* RemedyDescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

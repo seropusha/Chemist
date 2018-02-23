@@ -9,20 +9,6 @@
 import Foundation
 import CoreData
 
-extension CodingUserInfoKey {
-    static let contextKey = CodingUserInfoKey(rawValue: "ManagedObjectContext")!
-}
-
-extension Decoder {
-    var managedContext: NSManagedObjectContext {
-        guard let context = userInfo[.contextKey] as? NSManagedObjectContext else {
-            fatalError("Decoder hasn't NSManagedObjectContext in userInfo")
-        }
-        return context
-    }
-}
-
-
 @objc(RemedyDescriptionEntity)
 public class RemedyDescriptionEntity: NSManagedObject, Decodable {
     

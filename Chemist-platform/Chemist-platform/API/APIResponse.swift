@@ -8,12 +8,6 @@
 
 import Foundation
 
-struct MappingError: LocalizedError {
-    
-    let json: Any?
-    let keyPath: String?
-}
-
 struct APIResponse<Data: Decodable>: Decodable {
     let data: Data
     private let paginationJSON: [String: Any]?
@@ -23,11 +17,6 @@ struct APIResponse<Data: Decodable>: Decodable {
         case pagination  = "pagination"
     }
     
-    init(data: Data, paginationJSON: [String: Any]?) {
-        self.data = data
-        self.paginationJSON = paginationJSON
-    }
-    
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: APIResponseKeys.self)
         
@@ -35,9 +24,8 @@ struct APIResponse<Data: Decodable>: Decodable {
         self.paginationJSON = try container.decode([String:Any]?.self, forKey: .pagination)
     }
     
-    func attemptMap<N>(_ transform: (Data) throws -> N) throws -> APIResponse<N> {
-        let data = try transform(self.data)
-        return .init(data: data, paginationJSON: paginationJSON)
+    func attemptMap<N>(_ transform: (Data) throws -> N) throws -> N {
+        return try transform(self.data)
     }
     
 //    func slice<Element>(_ strategy: Pagination.Strategy) -> Slice<Element> where Data == [Element] {
