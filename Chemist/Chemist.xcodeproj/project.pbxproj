@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		16182B9B1F976A5000A2CCDC /* AppDelegateContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16182B9A1F976A5000A2CCDC /* AppDelegateContainer.swift */; };
-		16182BBF1F979A0B00A2CCDC /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16182BBE1F979A0B00A2CCDC /* CoreDataService.swift */; };
 		16BD481F1F56C91F00836CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BD481E1F56C91F00836CAB /* Assets.xcassets */; };
 		16BD48381F56C91F00836CAB /* ChemistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD48371F56C91F00836CAB /* ChemistUITests.swift */; };
 		16BD48591F56C9D600836CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD48501F56C9D600836CAB /* AppDelegate.swift */; };
@@ -49,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		16182B9A1F976A5000A2CCDC /* AppDelegateContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateContainer.swift; sourceTree = "<group>"; };
-		16182BBE1F979A0B00A2CCDC /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		16BD48141F56C91F00836CAB /* Chemist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chemist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BD481E1F56C91F00836CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16BD48281F56C91F00836CAB /* ChemistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,14 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16182BBD1F9799FE00A2CCDC /* LocalDBService */ = {
-			isa = PBXGroup;
-			children = (
-				16182BBE1F979A0B00A2CCDC /* CoreDataService.swift */,
-			);
-			path = LocalDBService;
-			sourceTree = "<group>";
-		};
 		16BD480B1F56C91F00836CAB = {
 			isa = PBXGroup;
 			children = (
@@ -218,7 +208,6 @@
 		16BD485E1F56CDE200836CAB /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				16182BBD1F9799FE00A2CCDC /* LocalDBService */,
 				BA15B0711F86735400D7B434 /* Services.swift */,
 			);
 			path = Services;
@@ -474,7 +463,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA15B0541F8620DD00D7B434 /* RootViewCoordinator.swift in Sources */,
-				16182BBF1F979A0B00A2CCDC /* CoreDataService.swift in Sources */,
 				BA15B0521F861C2D00D7B434 /* Coordinator.swift in Sources */,
 				BA15B0651F86599400D7B434 /* TestAppDelegate.swift in Sources */,
 				16182B9B1F976A5000A2CCDC /* AppDelegateContainer.swift in Sources */,

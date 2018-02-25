@@ -8,6 +8,7 @@
 
 import Foundation
 import Chemist_domain
+import struct Chemist_domain.Slice
 
 struct APIResponse<Data: Decodable>: Decodable {
     let data: Data
@@ -29,11 +30,11 @@ struct APIResponse<Data: Decodable>: Decodable {
         return try transform(self.data)
     }
     
-//    func slice<Element>(_ strategy: Pagination.Strategy) -> Slice<Element> where Data == [Element] {
-//        let cursors = strategy.rawValue.cursors(from: paginationJSON)
-//        let pagination = Pagination(cursorBefore: cursors.before, cursorAfter: cursors.after)
-//        return Slice(values: data, pagination: pagination)
-//    }
+    func slice<Element>(_ strategy: Pagination.Strategy) -> Slice<Element> where Data == [Element] {
+        let cursors = strategy.rawValue.cursors(from: paginationJSON)
+        let pagination = Pagination(cursorBefore: cursors.before, cursorAfter: cursors.after)
+        return Slice(values: data, pagination: pagination)
+    }
 }
 
 
