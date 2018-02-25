@@ -12,7 +12,7 @@ import CoreData
 import ReactiveSwift
 import Result
 
-class RemedyGateway {//: RemedyUseCase  {
+class RemedyGateway: RemedyUseCase  {
     
     let context: NSManagedObjectContext
     let provider: Provider<API.RemedyAPI>
@@ -23,18 +23,21 @@ class RemedyGateway {//: RemedyUseCase  {
         self.provider = provider
     }
     
-    func fetchRemedy(at index: Int) -> SignalProducer<RemedyEntity, AnyError> {
+    func fetchRemedy(at index: Int) -> SignalProducer<Remedy, DomainError> {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.managedContext = context
-        return provider.reactive.request(.getByID(index))
-            .map(RemedyEntity.self, using: jsonDecoder)
-            .mapError({ _ in return AnyError(NSError(domain: "", code: 1, userInfo: nil)) })
-        
+        return provider.reactive.request(.get(id: index))
+            .map(APIResponse<RemedyEntity>.self, using: jsonDecoder)
+            .attemptMap({ $0.data.toRemedy() })
+            .wait(completed: context.reactive.save())
     }
     
-    func fetchRemedyDescription(at index: Int) -> SignalProducer<RemedyDescription, AnyError> {
-        return SignalProducer<RemedyDescription, AnyError>{ observer, lifetime in
-            
-        }
+    func fetchRemedyDescription(at index: Int) -> SignalProducer<RemedyDescription, DomainError> {
+        let jsonDecoder = JSONDecoder()
+        jsonDecoder.managedContext = context
+        return provider.reactive.request(.get(id: index))
+            .map(APIResponse<RemedyDescriptionEntity>.self, using: jsonDecoder)
+            .attemptMap({ $0.data.toRemedyDescription() })
+            .wait(completed: context.reactive.save())
     }
 }

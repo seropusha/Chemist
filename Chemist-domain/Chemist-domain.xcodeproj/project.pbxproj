@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1603100D2042F6D600342DDC /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1603100C2042F6D600342DDC /* DomainError.swift */; };
+		1603100F2042F75A00342DDC /* APIResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1603100E2042F75A00342DDC /* APIResponseError.swift */; };
 		16A43A81202B213600D4A84A /* Chemist_domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A43A7F202B213600D4A84A /* Chemist_domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAB35B06203F048D00189EEA /* RemedyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B05203F048D00189EEA /* RemedyUseCase.swift */; };
 		BAB35B0E203F0BBE00189EEA /* Remedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B0C203F0BBD00189EEA /* Remedy.swift */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		0DDBAF52EF310317055E53F8 /* Pods-Chemist-domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemist-domain.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Chemist-domain/Pods-Chemist-domain.release.xcconfig"; sourceTree = "<group>"; };
+		1603100C2042F6D600342DDC /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		1603100E2042F75A00342DDC /* APIResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseError.swift; sourceTree = "<group>"; };
 		16A43A7C202B213600D4A84A /* Chemist_domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Chemist_domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A43A7F202B213600D4A84A /* Chemist_domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chemist_domain.h; sourceTree = "<group>"; };
 		16A43A80202B213600D4A84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1603100B2042F6B800342DDC /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				1603100C2042F6D600342DDC /* DomainError.swift */,
+				1603100E2042F75A00342DDC /* APIResponseError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		16A43A72202B213600D4A84A = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +72,7 @@
 		16A43A7E202B213600D4A84A /* Chemist-domain */ = {
 			isa = PBXGroup;
 			children = (
+				1603100B2042F6B800342DDC /* Errors */,
 				BAB35B09203F0B5200189EEA /* Entities */,
 				BAB35B04203F033C00189EEA /* UseCases */,
 				16A43A7F202B213600D4A84A /* Chemist_domain.h */,
@@ -219,8 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1603100F2042F75A00342DDC /* APIResponseError.swift in Sources */,
 				BAB35B0E203F0BBE00189EEA /* Remedy.swift in Sources */,
 				BAB35B06203F048D00189EEA /* RemedyUseCase.swift in Sources */,
+				1603100D2042F6D600342DDC /* DomainError.swift in Sources */,
 				BAB35B0F203F0BBE00189EEA /* RemedyDescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

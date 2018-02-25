@@ -21,9 +21,9 @@ public struct Remedy {
     var type: String
     var description: RemedyDescription?
     
-    public init(farmGroup: String,
+    public init(id: String,
+                farmGroup: String,
                 farmType: String,
-                id: String,
                 jenericIDs: String?,
                 manufactured: String,
                 substance: String,

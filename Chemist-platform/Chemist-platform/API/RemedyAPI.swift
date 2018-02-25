@@ -20,8 +20,8 @@ extension API {
         }
         
         case getSlice(limit: Int, offset: Int) // CREATE SLICES
-        case getByID(Int)
-        case getFullByID(Int)
+        case get(id: Int)
+        case getDescription(id: Int)
         case getRandom(Int)
         case search(String, SearchType?)
         
@@ -29,13 +29,13 @@ extension API {
         
         public var path: String {
             switch self {
-            case let .getByID(id):
+            case let .get(id: id):
                 return "remedy/\(id)"
             case .getSlice:
                 return "remedy"
             case .getRandom:
                 return "remedy"
-            case let .getFullByID(id):
+            case let .getDescription(id: id):
                 return "remedy/\(id)"
             case .search:
                 return "remedy"
@@ -48,14 +48,14 @@ extension API {
         
         public var task: Task {
             switch self {
-            case .getByID:
+            case .get(id:):
                 return .requestPlain
             case let .getSlice(limit, offset):
                 return .requestParameters(parameters: ["limit": limit,
                                                        "offset": offset], encoding: URLEncoding.default)
             case let .getRandom(count):
                 return .requestParameters(parameters: ["randomCount": count], encoding: URLEncoding.default)
-            case .getFullByID:
+            case .getDescription(id:):
                 return .requestPlain
             case let .search(text, type):
                 return .requestParameters(parameters: ["search": text,

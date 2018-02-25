@@ -18,9 +18,9 @@ protocol CoreData {
 }
 
 class CoreDataService: CoreData {
-    var viewManagedObjectContext: NSManagedObjectContext
-    var privateManagedObjectContext: NSManagedObjectContext
-    var persistentStoreCoordinator: NSPersistentStoreCoordinator
+    let viewManagedObjectContext: NSManagedObjectContext
+    let privateManagedObjectContext: NSManagedObjectContext
+    let persistentStoreCoordinator: NSPersistentStoreCoordinator
     
     init() {
         guard let modelURL = Bundle.main.url(forResource: "PersistentModel", withExtension: "momd") else {
