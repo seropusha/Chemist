@@ -10,8 +10,8 @@ import Foundation
 import Moya
 import Alamofire
 
-public typealias Request = TargetType
-public typealias Provider<T: Request> = MoyaProvider<T>
+typealias Request = TargetType
+typealias Provider<T: Request> = MoyaProvider<T>
 
 class APIClient {
     

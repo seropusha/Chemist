@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Chemist_domain
 
 struct APIResponse<Data: Decodable>: Decodable {
     let data: Data
@@ -33,7 +34,6 @@ struct APIResponse<Data: Decodable>: Decodable {
 //        let pagination = Pagination(cursorBefore: cursors.before, cursorAfter: cursors.after)
 //        return Slice(values: data, pagination: pagination)
 //    }
-    
 }
 
 

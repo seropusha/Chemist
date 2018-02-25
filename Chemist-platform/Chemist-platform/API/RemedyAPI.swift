@@ -7,6 +7,7 @@
 //
 
 import Moya
+import Chemist_domain
 
 extension API {
     enum RemedyAPI: Request {
@@ -19,40 +20,40 @@ extension API {
             case farmGroup
         }
         
-        case getSlice(limit: Int, offset: Int) // CREATE SLICES
+   //     case getSlice(Slice<Remedy>)
         case get(id: Int)
         case getDescription(id: Int)
         case getRandom(Int)
         case search(String, SearchType?)
         
-        public var baseURL: URL { return Environment.current.baseURL }
+        var baseURL: URL { return Environment.current.baseURL }
         
-        public var path: String {
+        var path: String {
             switch self {
             case let .get(id: id):
                 return "remedy/\(id)"
-            case .getSlice:
-                return "remedy"
+//            case .getSlice:
+//                return "remedy"
             case .getRandom:
                 return "remedy"
             case let .getDescription(id: id):
-                return "remedy/\(id)"
+                return "remedyDescription/\(id)"
             case .search:
                 return "remedy"
             }
         }
         
-        public var method: Moya.Method {
+        var method: Moya.Method {
             return .get
         }
         
-        public var task: Task {
+        var task: Task {
             switch self {
             case .get(id:):
                 return .requestPlain
-            case let .getSlice(limit, offset):
-                return .requestParameters(parameters: ["limit": limit,
-                                                       "offset": offset], encoding: URLEncoding.default)
+//            case let .getSlice(slice):
+//                //TODO configure parameters
+//                return .requestPlain
             case let .getRandom(count):
                 return .requestParameters(parameters: ["randomCount": count], encoding: URLEncoding.default)
             case .getDescription(id:):
@@ -62,16 +63,16 @@ extension API {
                                                        "type" : type?.rawValue ?? "title"], encoding: URLEncoding.default)
             }
         }
-        public var validationType: ValidationType {
+        var validationType: ValidationType {
             return .successCodes
         }
         
         //TODO ADD CUSTOM RESPONSE
-        public var sampleData: Data {
+        var sampleData: Data {
             return "".data(using: .utf8)!
         }
         
-        public var headers: [String: String]? {
+        var headers: [String: String]? {
             return nil
         }
         

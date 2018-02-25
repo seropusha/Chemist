@@ -10,6 +10,9 @@
 		1603100D2042F6D600342DDC /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1603100C2042F6D600342DDC /* DomainError.swift */; };
 		1603100F2042F75A00342DDC /* APIResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1603100E2042F75A00342DDC /* APIResponseError.swift */; };
 		16A43A81202B213600D4A84A /* Chemist_domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A43A7F202B213600D4A84A /* Chemist_domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16F1F5B820434ABF00B5993D /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F1F5B520434ABF00B5993D /* Pagination.swift */; };
+		16F1F5B920434ABF00B5993D /* Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F1F5B620434ABF00B5993D /* Slice.swift */; };
+		16F1F5BA20434ABF00B5993D /* LimitOffsetStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F1F5B720434ABF00B5993D /* LimitOffsetStrategy.swift */; };
 		BAB35B06203F048D00189EEA /* RemedyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B05203F048D00189EEA /* RemedyUseCase.swift */; };
 		BAB35B0E203F0BBE00189EEA /* Remedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B0C203F0BBD00189EEA /* Remedy.swift */; };
 		BAB35B0F203F0BBE00189EEA /* RemedyDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB35B0D203F0BBE00189EEA /* RemedyDescription.swift */; };
@@ -23,6 +26,9 @@
 		16A43A7C202B213600D4A84A /* Chemist_domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Chemist_domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A43A7F202B213600D4A84A /* Chemist_domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chemist_domain.h; sourceTree = "<group>"; };
 		16A43A80202B213600D4A84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F1F5B520434ABF00B5993D /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		16F1F5B620434ABF00B5993D /* Slice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slice.swift; sourceTree = "<group>"; };
+		16F1F5B720434ABF00B5993D /* LimitOffsetStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitOffsetStrategy.swift; sourceTree = "<group>"; };
 		A9B3F5C9DE14F5B9B4765E31 /* Pods_Chemist_domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chemist_domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB35B05203F048D00189EEA /* RemedyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemedyUseCase.swift; sourceTree = "<group>"; };
 		BAB35B0C203F0BBD00189EEA /* Remedy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Remedy.swift; sourceTree = "<group>"; };
@@ -72,6 +78,7 @@
 		16A43A7E202B213600D4A84A /* Chemist-domain */ = {
 			isa = PBXGroup;
 			children = (
+				16F1F5B420434ABF00B5993D /* Pagination */,
 				1603100B2042F6B800342DDC /* Errors */,
 				BAB35B09203F0B5200189EEA /* Entities */,
 				BAB35B04203F033C00189EEA /* UseCases */,
@@ -79,6 +86,16 @@
 				16A43A80202B213600D4A84A /* Info.plist */,
 			);
 			path = "Chemist-domain";
+			sourceTree = "<group>";
+		};
+		16F1F5B420434ABF00B5993D /* Pagination */ = {
+			isa = PBXGroup;
+			children = (
+				16F1F5B520434ABF00B5993D /* Pagination.swift */,
+				16F1F5B620434ABF00B5993D /* Slice.swift */,
+				16F1F5B720434ABF00B5993D /* LimitOffsetStrategy.swift */,
+			);
+			path = Pagination;
 			sourceTree = "<group>";
 		};
 		6054D9F2866626F2F2A457EF /* Pods */ = {
@@ -236,6 +253,9 @@
 				1603100F2042F75A00342DDC /* APIResponseError.swift in Sources */,
 				BAB35B0E203F0BBE00189EEA /* Remedy.swift in Sources */,
 				BAB35B06203F048D00189EEA /* RemedyUseCase.swift in Sources */,
+				16F1F5B920434ABF00B5993D /* Slice.swift in Sources */,
+				16F1F5B820434ABF00B5993D /* Pagination.swift in Sources */,
+				16F1F5BA20434ABF00B5993D /* LimitOffsetStrategy.swift in Sources */,
 				1603100D2042F6D600342DDC /* DomainError.swift in Sources */,
 				BAB35B0F203F0BBE00189EEA /* RemedyDescription.swift in Sources */,
 			);

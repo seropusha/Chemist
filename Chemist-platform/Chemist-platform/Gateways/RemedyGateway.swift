@@ -6,21 +6,28 @@
 //  Copyright © 2018 Navka Sergey. All rights reserved.
 //
 
-import Foundation
 import Chemist_domain
+import struct Chemist_domain.Slice
+import Foundation
 import CoreData
 import ReactiveSwift
-import Result
 
-class RemedyGateway: RemedyUseCase  {
+final class RemedyGateway: RemedyUseCase  {
+    
     
     let context: NSManagedObjectContext
     let provider: Provider<API.RemedyAPI>
     
-    required public init(_ context: NSManagedObjectContext,
+    init(_ context: NSManagedObjectContext,
                          provider: Provider<API.RemedyAPI>) {
         self.context = context
         self.provider = provider
+    }
+    
+    public func fetchRemedies(_ slice: Slice<Remedy>?) -> SignalProducer<Slice<Remedy>, DomainError> {
+        return SignalProducer<Slice<Remedy>, DomainError> { observer, lifetime in
+            
+        }
     }
     
     func fetchRemedy(at index: Int) -> SignalProducer<Remedy, DomainError> {

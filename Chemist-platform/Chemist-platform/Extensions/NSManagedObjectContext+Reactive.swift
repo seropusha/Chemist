@@ -15,7 +15,7 @@ extension Reactive where Base == NSManagedObjectContext {
     func save() -> SignalProducer<(),DomainError> {
         return SignalProducer<Void,DomainError> { [weak base] observer, lifetime in
             guard let base = base else {
-                observer.send(error: .save(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey:"NSManagedObjectContext is nil"])))
+                observer.send(error: .save(NSError(domain: "", code: -1999, userInfo: [NSLocalizedDescriptionKey:"NSManagedObjectContext is nil"])))
                 return
             }
             base.perform {
