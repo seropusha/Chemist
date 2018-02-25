@@ -16,9 +16,11 @@ typealias Provider<T: Request> = MoyaProvider<T>
 class APIClient {
     
     let manager: Manager
-    
-    init() {
+    let reachability: Reachability
+
+    init(_ reachability: Reachability) {
         manager = SessionManager()
+        self.reachability = reachability
     }
     
     func getProvider<T: Request>() -> Provider<T> {

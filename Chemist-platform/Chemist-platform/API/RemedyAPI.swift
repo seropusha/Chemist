@@ -8,6 +8,7 @@
 
 import Moya
 import Chemist_domain
+import struct Chemist_domain.Slice
 
 extension API {
     enum RemedyAPI: Request {
@@ -20,7 +21,7 @@ extension API {
             case farmGroup
         }
         
-   //     case getSlice(Slice<Remedy>)
+        case getSlice(Slice<Remedy>?)
         case get(id: Int)
         case getDescription(id: Int)
         case getRandom(Int)
@@ -32,8 +33,8 @@ extension API {
             switch self {
             case let .get(id: id):
                 return "remedy/\(id)"
-//            case .getSlice:
-//                return "remedy"
+            case .getSlice:
+                return "remedy"
             case .getRandom:
                 return "remedy"
             case let .getDescription(id: id):
@@ -51,9 +52,8 @@ extension API {
             switch self {
             case .get(id:):
                 return .requestPlain
-//            case let .getSlice(slice):
-//                //TODO configure parameters
-//                return .requestPlain
+            case let .getSlice(slice):
+                return .requestParameters(parameters: slice?.pagination.cursorAfter?.parameters ?? [:], encoding: URLEncoding.default)
             case let .getRandom(count):
                 return .requestParameters(parameters: ["randomCount": count], encoding: URLEncoding.default)
             case .getDescription(id:):

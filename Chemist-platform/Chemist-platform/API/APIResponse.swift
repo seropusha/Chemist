@@ -19,6 +19,11 @@ struct APIResponse<Data: Decodable>: Decodable {
         case pagination  = "pagination"
     }
     
+    init(data: Data, pagination: [String: Any]?) {
+        self.data = data
+        self.paginationJSON = pagination
+    }
+    
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: APIResponseKeys.self)
         
@@ -26,8 +31,9 @@ struct APIResponse<Data: Decodable>: Decodable {
         self.paginationJSON = try container.decode([String:Any]?.self, forKey: .pagination)
     }
     
-    func attemptMap<N>(_ transform: (Data) throws -> N) throws -> N {
-        return try transform(self.data)
+    func attemptMap<N>(_ transform: (Data) throws -> N) throws -> APIResponse<N> {
+        let data = try transform(self.data)
+        return .init(data: data, pagination: paginationJSON)
     }
     
     func slice<Element>(_ strategy: Pagination.Strategy) -> Slice<Element> where Data == [Element] {

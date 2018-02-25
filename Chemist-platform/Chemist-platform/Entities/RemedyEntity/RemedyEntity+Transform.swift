@@ -23,3 +23,9 @@ extension RemedyEntity {
         return remedy
     }
 }
+
+extension Sequence where Iterator.Element : RemedyEntity {
+    func toRemedies() -> [Remedy] {
+        return flatMap({ $0.toRemedy() })
+    }
+}
