@@ -12,6 +12,12 @@ public enum DomainError: Error {
     case api(APIResponseError)
     case decodable(Error)
     case underlying(Error)
-    case save(Error)
+    case persistance(PersistanceError)
     case `internal`
+}
+
+public enum PersistanceError: Error {
+    case failed
+    case save(Error)
+    case fetch(Error)
 }

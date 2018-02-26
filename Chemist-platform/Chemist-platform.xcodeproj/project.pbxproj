@@ -19,7 +19,6 @@
 		16A43A6D202B20FF00D4A84A /* RemedyEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A63202B20FF00D4A84A /* RemedyEntity+CoreDataClass.swift */; };
 		16A43A6E202B20FF00D4A84A /* RemedyDescriptionEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A64202B20FF00D4A84A /* RemedyDescriptionEntity+CoreDataClass.swift */; };
 		16A43A6F202B20FF00D4A84A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A65202B20FF00D4A84A /* CoreDataService.swift */; };
-		16A43A70202B20FF00D4A84A /* NSManagedObjectContextFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A66202B20FF00D4A84A /* NSManagedObjectContextFetch.swift */; };
 		16A43A71202B20FF00D4A84A /* RemedyGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A43A68202B20FF00D4A84A /* RemedyGateway.swift */; };
 		16EFE0E720323D4C00F71C75 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFE0E620323D4C00F71C75 /* APIResponse.swift */; };
 		16F1F5B0204346C200B5993D /* Chemist_domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F1F5B1204346C200B5993D /* Chemist_domain.framework */; };
@@ -46,7 +45,6 @@
 		16A43A63202B20FF00D4A84A /* RemedyEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemedyEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		16A43A64202B20FF00D4A84A /* RemedyDescriptionEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemedyDescriptionEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		16A43A65202B20FF00D4A84A /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
-		16A43A66202B20FF00D4A84A /* NSManagedObjectContextFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContextFetch.swift; sourceTree = "<group>"; };
 		16A43A68202B20FF00D4A84A /* RemedyGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemedyGateway.swift; sourceTree = "<group>"; };
 		16EFE0E620323D4C00F71C75 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		16F1F5B1204346C200B5993D /* Chemist_domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Chemist_domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				16A43A65202B20FF00D4A84A /* CoreDataService.swift */,
-				16A43A66202B20FF00D4A84A /* NSManagedObjectContextFetch.swift */,
 			);
 			path = CoredData;
 			sourceTree = "<group>";
@@ -323,7 +320,6 @@
 				16A43A6A202B20FF00D4A84A /* RemedyEntity+CoreDataProperties.swift in Sources */,
 				16A43A6C202B20FF00D4A84A /* PersistentModel.xcdatamodeld in Sources */,
 				16F1F5BE2043540E00B5993D /* ReachabilityService.swift in Sources */,
-				16A43A70202B20FF00D4A84A /* NSManagedObjectContextFetch.swift in Sources */,
 				165BD2D72030B2E300FB3195 /* RemedyAPI.swift in Sources */,
 				16A43A6F202B20FF00D4A84A /* CoreDataService.swift in Sources */,
 				16A43A6B202B20FF00D4A84A /* RemedyDescriptionEntity+CoreDataProperties.swift in Sources */,

@@ -60,7 +60,7 @@ public class RemedyDescriptionEntity: NSManagedObject, Decodable {
         pharmacodynamics = try container.decode(String?.self, forKey: .pharmacodynamics)
         drugOverdose = try container.decode(String?.self, forKey: .drugOverdose)
         
-        decoder.managedContext.allEntities(withType: RemedyEntity.self, predicate: NSPredicate(format: "id == %@", id))
+        decoder.managedContext.reactive.fetch(withType: RemedyEntity.self, predicate: NSPredicate(format: "id == %@", id))
             .take(last: 1)
             .startWithResult({ [weak self] result in
                 if case let .success(remedies) = result {

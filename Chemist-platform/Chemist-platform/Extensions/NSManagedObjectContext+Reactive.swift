@@ -9,13 +9,14 @@
 import Chemist_domain
 import CoreData
 import ReactiveSwift
+import Result
 
 extension NSManagedObjectContext: ReactiveExtensionsProvider {}
-extension Reactive where Base == NSManagedObjectContext {
+extension Reactive where Base: NSManagedObjectContext {
     func save() -> SignalProducer<(),DomainError> {
         return SignalProducer<Void,DomainError> { [weak base] observer, lifetime in
             guard let base = base else {
-                observer.send(error: .save(NSError(domain: "", code: -1999, userInfo: [NSLocalizedDescriptionKey:"NSManagedObjectContext is nil"])))
+                observer.send(error: .persistance(.failed))
                 return
             }
             base.perform {
@@ -23,9 +24,57 @@ extension Reactive where Base == NSManagedObjectContext {
                     try base.save()
                     observer.sendCompleted()
                 } catch let error {
-                    observer.send(error: .save(error))
+                    observer.send(error: .persistance(.save(error)))
                 }
             }
+        }
+    }
+    
+//    func updateOrSave<T: NSManagedObject>(_ items: [T]) -> SignalProducer<[T], DomainError> {
+////        return SignalProducer<[T], DomainError> { [weak base] observer, lifetime in
+////            guard let base = base else {
+////                observer.send(error: .persistance(.failed))
+////                return
+////            }
+////            base.reactive
+////        }
+//
+////        let predicate = NSPredicate(format: "id == %@", id)
+//       // return base.reactive.fetch(withType: T.self, predicate: NSPredicate(format: <#T##String#>, <#T##args: CVarArg...##CVarArg#>))
+//    }
+    
+    func fetch<T: NSManagedObject>(withType type: T.Type) -> SignalProducer<[T],DomainError> {
+        return fetch(withType: type, predicate: nil)
+    }
+    
+    func fetch<T: NSManagedObject>(withType type: T.Type, predicate: NSPredicate?) -> SignalProducer<[T],DomainError> {
+        return SignalProducer<[T], DomainError> { [weak base] observer, lifetime in
+            guard let base = base else {
+                observer.send(error: .persistance(.failed))
+                return
+            }
+            let request = NSFetchRequest<T>(entityName: T.description())
+            request.predicate = predicate
+            do {
+                let results = try base.fetch(request)
+                observer.send(value: results)
+                observer.sendCompleted()
+            } catch let error {
+                observer.send(error: .persistance(.fetch(error)))
+            }
+        }
+    }
+    
+    func create<T: NSManagedObject>(withType type: T.Type) -> SignalProducer<T?,DomainError> {
+        return SignalProducer<T?, DomainError> { [weak base] observer, lifetime in
+            guard let base = base, let entity = NSEntityDescription.entity(forEntityName: T.description(), in: base) else {
+                observer.send(value: nil)
+                observer.sendCompleted()
+                return
+            }
+            let record = T(entity: entity, insertInto: base)
+            observer.send(value: record)
+            observer.sendCompleted()
         }
     }
 }
