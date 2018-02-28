@@ -14,19 +14,17 @@ import ReactiveSwift
 
 final class RemedyGateway: RemedyUseCase  {
     
-    
     let context: NSManagedObjectContext
     let provider: Provider<API.RemedyAPI>
     let reachability: Reachability
     
-    init(_ context: NSManagedObjectContext,
-                         api: APIClient) {
+    init(_ context: NSManagedObjectContext, api: APIClient) {
         self.context = context
         self.provider = api.getProvider()
         self.reachability = api.reachability
     }
     
-    public func fetchRemedies(_ slice: Slice<Remedy>?) -> SignalProducer<Slice<Remedy>, DomainError> {
+    func fetchRemedies(_ slice: Slice<Remedy>?) -> SignalProducer<Slice<Remedy>, DomainError> {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.managedContext = context
         return provider.reactive.request(.getSlice(slice))

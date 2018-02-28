@@ -26,15 +26,12 @@ public class RemedyEntity: NSManagedObject, Decodable {
     }
     
     public convenience required init(from decoder: Decoder) throws {
-        
         guard let entityDescription = NSEntityDescription.entity(forEntityName: "\(RemedyDescriptionEntity.self)", in: decoder.managedContext) else {
             fatalError("")
         }
-        
         self.init(entity: entityDescription, insertInto: decoder.managedContext)
         
         let container = try decoder.container(keyedBy: RemedyKeys.self)
-
         id = try container.decode(String.self, forKey: .id)
         title = try container.decode(String.self, forKey: .title)
         titleFull = try container.decode(String.self, forKey: .titleFull)

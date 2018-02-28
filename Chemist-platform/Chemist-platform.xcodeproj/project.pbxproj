@@ -114,7 +114,7 @@
 			children = (
 				BA4DE1EA204048E60031703B /* Extensions */,
 				165BD2CF2030A27700FB3195 /* Environment.swift */,
-				16A43A5D202B20FF00D4A84A /* CoredData */,
+				16A43A5D202B20FF00D4A84A /* CoreData */,
 				16A43A5E202B20FF00D4A84A /* Entities */,
 				BA5DD098202DCAF900719A89 /* API */,
 				16A43A67202B20FF00D4A84A /* Gateways */,
@@ -124,12 +124,12 @@
 			path = "Chemist-platform";
 			sourceTree = "<group>";
 		};
-		16A43A5D202B20FF00D4A84A /* CoredData */ = {
+		16A43A5D202B20FF00D4A84A /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				16A43A65202B20FF00D4A84A /* CoreDataService.swift */,
 			);
-			path = CoredData;
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		16A43A5E202B20FF00D4A84A /* Entities */ = {

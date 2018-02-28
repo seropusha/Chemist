@@ -38,9 +38,7 @@ public class RemedyDescriptionEntity: NSManagedObject, Decodable {
             fatalError("NSEntityDescription not found")
         }
         self.init(entity: entityDescription, insertInto: decoder.managedContext)
-        
         let container = try decoder.container(keyedBy: RemedyDescriptionKeys.self)
-        
         id = try container.decode(String.self, forKey: .id)
         useDuringPregnancy = try container.decode(String?.self, forKey: .useDuringPregnancy)
         contraindications = try container.decode(String?.self, forKey: .contraindications)
