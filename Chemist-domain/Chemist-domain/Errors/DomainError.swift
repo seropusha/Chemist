@@ -18,6 +18,7 @@ public enum DomainError: Error {
 
 public enum PersistanceError: Error {
     case failed
+    case invalidCompareKey
     case save(Error)
     case fetch(Error)
 }
